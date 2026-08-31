@@ -1,3 +1,11 @@
 .energy-equation strong{display:inline-block;text-align:center;line-height:1.12;border-bottom:0;color:#fff;padding:0 8px}
 .energy-equation strong i{display:block;font-style:normal;border-left:0;border-top:2px solid var(--aqua);padding:5px 8px 0;margin-top:2px}
 .energy-equation strong sup{font-size:.58em;vertical-align:super}
+.hydro-hero .hero-summary{margin-top:38px}
+
+/* Give the longer project title room before the hero reaches a half-screen layout. */
+@media(max-width:1150px){
+  .hydro-hero{grid-template-columns:1fr;padding-top:48px;padding-bottom:78px}
+  .hydro-hero h1{font-size:clamp(68px,12vw,112px);letter-spacing:-5px}
+  .hero-diagram{width:min(100%,760px);height:340px;margin-top:50px}
+}
