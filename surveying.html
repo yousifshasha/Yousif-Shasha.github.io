@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surveying & Geospatial Field Methods | Yousif Shasha</title>
+  <meta name="description" content="CVL323 surveying portfolio project by Yousif Shasha.">
+  <link rel="stylesheet" href="surveying.css">
+</head>
+<body>
+  <!-- =========================================
+       EDITING GUIDE
+       - Main text/content: edit this HTML file.
+       - Images: replace files inside assets/.
+       - Layout/colors: edit surveying.css.
+       - Interactions: edit surveying.js.
+       ========================================= -->
+
+  <header class="site-nav">
+    <a class="logo" href="index.html">YS<span>.</span></a>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="nav-button" href="index.html#contact">Let's Connect</a>
+  </header>
+
+  <main>
+    <!-- =========================================
+         HERO
+         ========================================= -->
+    <section class="hero">
+      <div class="hero-content">
+        <a class="back-link" href="index.html#projects">← Back to projects</a>
+        <p class="eyebrow hero-eyebrow">CVL323 · FUNDAMENTALS OF SURVEYING · FALL 2025</p>
+        <h1>Surveying &<br><span>Geospatial</span><br>Field Methods</h1>
+        <p class="hero-description">
+          A field-based surveying project involving leveling, total-station observations,
+          elevation determination, measurement-error analysis, and closed-traverse calculations.
+        </p>
+        <div class="hero-tags">
+          <span>FIELD SURVEYING</span>
+          <span>TOTAL STATION</span>
+          <span>LEVELING</span>
+          <span>TRAVERSING</span>
+        </div>
+      </div>
+
+      <!-- EDIT: This is the original-style technical image at the top of the page. -->
+      <div class="hero-image">
+        <img src="assets/hero-survey-control.png" alt="Technical surveying control graphic showing a closed survey network">
+        <p>Survey-control graphic · field measurements · geometric control</p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PROJECT OVERVIEW + TABLE OF CONTENTS
+         ========================================= -->
+    <section class="section" id="overview">
+      <div class="overview-layout">
+        <div class="overview-copy">
+          <p class="eyebrow">PROJECT OVERVIEW</p>
+          <h2>From field observations to checked survey results.</h2>
+          <p>
+            This project brought together the surveying techniques developed throughout CVL323.
+            The work included differential leveling, measurement-error analysis, total-station
+            angle observations, trigonometric leveling, and closed-traverse calculations.
+          </p>
+          <p>
+            I served as the <strong>field leader for a six-person team</strong> and was responsible
+            for the project's calculations and data processing, connecting the team's raw field
+            observations to the final checked results.
+          </p>
+
+          <div class="info-grid overview-info">
+            <div><span class="info-label">COURSE</span><strong>CVL323</strong></div>
+            <div><span class="info-label">SEMESTER</span><strong>Fall 2025</strong></div>
+            <div><span class="info-label">ROLE</span><strong>Group Leader + Calculations Lead</strong></div>
+            <div><span class="info-label">TEAM</span><strong>6 people</strong></div>
+          </div>
+        </div>
+
+        <aside class="toc" aria-label="Table of contents">
+          <p class="eyebrow">TABLE OF CONTENTS</p>
+          <a href="#field-site"><span>01</span>Field Site</a>
+          <a href="#leveling"><span>02</span>Leveling — Part One</a>
+          <a href="#differential-leveling"><span>03</span>Differential Leveling</a>
+          <a href="#angles"><span>04</span>Angle Measurement</a>
+          <a href="#trig"><span>05</span>Trigonometric Leveling</a>
+          <a href="#traverse"><span>06</span>Closed Traverse</a>
+          <a href="#calculations"><span>07</span>Sample Calculations</a>
+          <a href="#contribution"><span>08</span>My Contribution</a>
+          <a href="#takeaways"><span>09</span>Key Takeaways</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================================
+         TOOLS & EQUIPMENT
+         ========================================= -->
+    <section class="section dark" id="tools">
+      <div class="section-heading">
+        <p class="eyebrow">TOOLS & EQUIPMENT</p>
+        <h2>Field + digital workflow.</h2>
+      </div>
+      <div class="tools-grid">
+        <article class="tool-card"><span class="tool-icon">01</span><h3>Total Station</h3><p>Horizontal directions, zenith angles, distances, and trigonometric leveling.</p></article>
+        <article class="tool-card"><span class="tool-icon">02</span><h3>Automatic Level</h3><p>Differential leveling, backsight/foresight readings, and elevation checks.</p></article>
+        <article class="tool-card"><span class="tool-icon">03</span><h3>Field Equipment</h3><p>Tripod, level rods, target rod, measuring tape, chalk, and field notes.</p></article>
+        <article class="tool-card"><span class="tool-icon">04</span><h3>Excel / Google Sheets</h3><p>Data organization, calculations, averages, error checks, and result tables.</p></article>
+      </div>
+    </section>
+
+    <!-- =========================================
+         FIELD SITE
+         ========================================= -->
+    <section class="section" id="field-site">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">01 · FIELD SITE</p>
+        <h2>Surveying around the campus.</h2>
+      </div>
+
+      <div class="field-site-layout">
+        <figure class="field-plan-card">
+          <img src="assets/field-site-plan.png" alt="Surveying site plan showing the Architecture Building and surrounding buildings">
+          <figcaption>Field-site plan showing the survey stations and surrounding campus buildings.</figcaption>
+        </figure>
+
+        <div class="field-site-copy">
+          <p>
+            The field work was carried out around the assigned survey area near the Architecture
+            Building. The survey network connected multiple control points and allowed the team
+            to collect the observations needed for leveling, angle measurement, trigonometric
+            leveling, and traverse calculations.
+          </p>
+          <p>
+            The survey was organized as a closed field exercise so that the measurements could be
+            checked for consistency and adjusted when necessary.
+          </p>
+          <div class="field-facts">
+            <div><span>Survey type</span><strong>Closed field network</strong></div>
+            <div><span>Control points</span><strong>D1–D6 / station network</strong></div>
+            <div><span>Location</span><strong>TMU Campus</strong></div>
+            <div><span>Primary purpose</span><strong>Measure → calculate → check</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         LEVELING — PART ONE
+         ========================================= -->
+    <section class="section light-alt" id="leveling">
+      <div class="section-heading">
+        <p class="eyebrow">02 · LEVELING — PART ONE</p>
+        <h2>Determining elevation differences with an automatic level.</h2>
+      </div>
+
+      <div class="leveling-layout">
+        <div class="process-list">
+          <div class="process-step"><span>01</span><div><h3>Instrument setup</h3><p>The automatic level was mounted securely on the tripod and leveled so that the line of sight was horizontal.</p></div></div>
+          <div class="process-step"><span>02</span><div><h3>Backsight reading</h3><p>The leveling staff was placed on a point with a known elevation, or benchmark. The staff reading was recorded as the <strong>backsight</strong> and used to establish the instrument height.</p></div></div>
+          <div class="process-step"><span>03</span><div><h3>Foresight reading</h3><p>The staff was moved to the next point, or turning point. The reading taken from the same horizontal line of sight was recorded as the <strong>foresight</strong>.</p></div></div>
+          <div class="process-step"><span>04</span><div><h3>Elevation calculation</h3><p>The difference in elevation between the two points was determined from the backsight and foresight readings.</p></div></div>
+          <div class="formula large">ΔH = Backsight − Foresight</div>
+        </div>
+
+        <div class="leveling-side">
+          <div class="process-diagram">
+            <div class="level-point lp1"><b>Benchmark</b><span>Known elevation</span></div>
+            <div class="sight-line"></div>
+            <div class="level-instrument"><span>Automatic<br>Level</span></div>
+            <div class="level-point lp2"><b>Turning Point</b><span>Foresight</span></div>
+            <div class="reading-card rc1"><strong>Backsight</strong><small>First staff reading</small></div>
+            <div class="reading-card rc2"><strong>Foresight</strong><small>Next staff reading</small></div>
+          </div>
+          <div class="method-note"><strong>Why the setup matters:</strong> Keeping the instrument properly leveled and using a consistent line of sight improves the reliability of the elevation difference.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         DIFFERENTIAL LEVELING
+         ========================================= -->
+    <section class="section" id="differential-leveling">
+      <div class="section-heading">
+        <p class="eyebrow">03 · DIFFERENTIAL LEVELING</p>
+        <h2>Checking closure and adjusting elevations.</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            A closed leveling loop was used to compare the starting and ending benchmark
+            elevations. The measurements were processed into elevations, checked for misclosure,
+            compared with the permissible closure, and adjusted where required.
+          </p>
+          <p>
+            This part of the work demonstrated that field measurements need a quality check before
+            they are used as final engineering values.
+          </p>
+        </div>
+        <div class="result-card">
+          <span>RESULT CHECK</span>
+          <div class="result-row"><b>Misclosure</b><strong>0.01 ft</strong></div>
+          <div class="result-row"><b>Permissible closure</b><strong>0.0197 ft</strong></div>
+          <div class="result-row"><b>Outcome</b><strong class="accepted">Acceptable ✓</strong></div>
+          <p>Elevations were adjusted using proportional correction after the closure check.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         ANGLE MEASUREMENT
+         ========================================= -->
+    <section class="section" id="angles">
+      <div class="section-heading">
+        <p class="eyebrow">04 · ANGLE MEASUREMENT</p>
+        <h2>Direct and reverse total-station observations.</h2>
+      </div>
+      <div class="two-column angle-layout">
+        <div>
+          <p>
+            The total station was set up at survey stations and used to observe horizontal
+            directions to target points. Direct and reverse observations were recorded so the
+            readings could be checked and averaged.
+          </p>
+          <ul class="clean-list">
+            <li>Tripod setup and instrument security</li>
+            <li>Centering and leveling</li>
+            <li>Target sighting and focusing</li>
+            <li>Direct and reverse observations</li>
+            <li>Comparison of repeated readings</li>
+          </ul>
+        </div>
+        <figure class="image-card angle-card">
+          <img src="assets/angle-measurement-clean.svg" alt="Clean editable diagram showing three total-station sight lines from P to Q, R and S">
+          <figcaption>Clean redraw of the three sight lines used for the angle-measurement exercise.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- =========================================
+         TRIGONOMETRIC LEVELING
+         ========================================= -->
+    <section class="section dark" id="trig">
+      <div class="section-heading">
+        <p class="eyebrow">05 · TRIGONOMETRIC LEVELING</p>
+        <h2>Using geometry to determine elevation.</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            Trigonometric leveling used the total station to combine measured distance, zenith
+            angle, instrument height, and target height. The vertical component was determined
+            from the observed slope distance and angle.
+          </p>
+          <div class="formula light large">V = S cos(Z) = S sin(α)</div>
+          <div class="formula light large">ΔElev = hᵢ + V − hᵣ</div>
+          <div class="metric-row">
+            <div><strong>97.0032 m</strong><span>Observed benchmark elevation</span></div>
+            <div><strong>0.0032 m</strong><span>Benchmark misclosure</span></div>
+            <div><strong>0.0073615 m</strong><span>Permissible closure</span></div>
+          </div>
+        </div>
+        <figure class="diagram-card">
+          <img src="assets/trig-leveling-diagram.png" alt="Trigonometric leveling geometry showing total station, target, slope distance, zenith angle and elevation difference">
+        </figure>
+      </div>
+    </section>
+
+    <!-- =========================================
+         CLOSED TRAVERSE
+         ========================================= -->
+    <section class="section" id="traverse">
+      <div class="section-heading">
+        <p class="eyebrow">06 · CLOSED TRAVERSE</p>
+        <h2>Angles → azimuths → coordinates.</h2>
+      </div>
+      <div class="case-grid">
+        <div>
+          <p>
+            The traverse exercise extended the field measurements into coordinate control. The
+            observations were processed through angular checks, azimuths, departures, latitudes,
+            coordinates, and adjustment.
+          </p>
+          <div class="metric-row dark-text">
+            <div><strong>20″</strong><span>Angular misclosure</span></div>
+            <div><strong>0.00632 m</strong><span>Linear misclosure</span></div>
+            <div><strong>1 : 58,000</strong><span>Relative precision</span></div>
+          </div>
+        </div>
+        <div class="traverse-graphic">
+          <svg viewBox="0 0 700 450" role="img" aria-label="Closed traverse schematic">
+            <rect width="700" height="450" fill="#20231f"/>
+            <polyline points="120,100 570,145 480,350 180,325 120,100" fill="none" stroke="#f4f4f0" stroke-width="5"/>
+            <circle cx="120" cy="100" r="11" fill="#2457ff"/><circle cx="570" cy="145" r="11" fill="#2457ff"/><circle cx="480" cy="350" r="11" fill="#2457ff"/><circle cx="180" cy="325" r="11" fill="#2457ff"/>
+            <g fill="#fff" font-family="Arial" font-size="20" font-weight="700"><text x="90" y="82">A1</text><text x="585" y="140">A2</text><text x="495" y="378">A4</text><text x="145" y="350">A5</text></g>
+            <text x="35" y="415" fill="#b5b9b1" font-family="Arial" font-size="16">Schematic of the closed traverse</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         SAMPLE CALCULATIONS
+         ========================================= -->
+    <section class="section light-alt" id="calculations">
+      <div class="section-heading">
+        <p class="eyebrow">07 · SAMPLE CALCULATIONS</p>
+        <h2>Selected spreadsheet work.</h2>
+        <p class="section-subtitle">A cropped section of the calculation sheet is shown below so the field data is readable without excessive empty spreadsheet space.</p>
+      </div>
+      <figure class="spreadsheet-card">
+        <button class="image-button" data-image="assets/excel-sample-calculations-cropped.png" data-caption="Cropped sample calculation sheet from the surveying project.">
+          <img src="assets/excel-sample-calculations-cropped.png" alt="Cropped surveying calculation spreadsheet showing direct and reverse observations, distances and elevation differences">
+          <span>Click to enlarge</span>
+        </button>
+        <figcaption>Sample calculation sheet showing direct/reverse observations, horizontal circle readings, zenith angles, distances, and elevation differences.</figcaption>
+      </figure>
+      <div class="calculation-cards">
+        <article><span>01</span><h3>Elevation difference</h3><p>ΔH = Backsight − Foresight</p></article>
+        <article><span>02</span><h3>Vertical component</h3><p>V = S cos(Z)</p></article>
+        <article><span>03</span><h3>Traverse control</h3><p>Misclosure → correction → adjusted coordinates</p></article>
+      </div>
+    </section>
+
+    <!-- =========================================
+         CONTRIBUTION
+         ========================================= -->
+    <section class="section" id="contribution">
+      <div class="two-column contribution-section">
+        <div>
+          <p class="eyebrow">08 · MY CONTRIBUTION</p>
+          <h2>Field leadership + calculations.</h2>
+        </div>
+        <div>
+          <p>
+            I served as the <strong>field leader for a six-person surveying team</strong>. I was
+            responsible for coordinating the field workflow, organizing the measurement sequence,
+            helping the team maintain consistent instrument setup and observation procedures, and
+            keeping the field work organized and efficient.
+          </p>
+          <p>
+            I was also responsible for <strong>all of the project's calculations and data
+            processing</strong>. This included organizing raw field observations, processing direct
+            and reverse total-station readings, calculating elevation differences, checking closure
+            and misclosure, applying adjustments, and completing the traverse calculations involving
+            angles, azimuths, departures, latitudes, and coordinates.
+          </p>
+          <p>
+            In practical terms, my role connected the field work to the final engineering results:
+            I helped lead the six-person team in the field and was responsible for turning the
+            team's measurements into organized, checked, and interpretable calculations.
+          </p>
+          <div class="role-tags">
+            <span>FIELD LEADER</span><span>CALCULATIONS LEAD</span><span>DATA PROCESSING</span><span>ERROR CHECKING</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         TAKEAWAYS
+         ========================================= -->
+    <section class="section dark" id="takeaways">
+      <div class="two-column">
+        <div><p class="eyebrow">09 · KEY TAKEAWAYS</p><h2>What I developed through the project.</h2></div>
+        <div class="takeaways">
+          <p>Practical total-station and automatic-level setup</p>
+          <p>Field data collection and organized field notes</p>
+          <p>Elevation and coordinate calculations</p>
+          <p>Measurement-error and closure analysis</p>
+          <p>Traverse adjustment and coordinate control</p>
+          <p>Team leadership in a field environment</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image lightbox for the spreadsheet -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightbox-image" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <footer>
+    <span>© 2026 Yousif Shasha</span>
+    <span>CVL323 · Surveying & Geospatial Field Methods</span>
+  </footer>
+  <script src="surveying.js"></script>
+</body>
+</html>

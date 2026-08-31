@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Structural mechanics laboratory illustration</title>
+  <desc id="desc">Blueprint-style aluminum truss, I-beam section, load arrows, strain gauges, and dimension lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071722"/><stop offset="1" stop-color="#12364b"/></linearGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#5cc9f1" stroke-opacity=".10"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#36caff"/></marker>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/><rect width="1200" height="700" fill="url(#grid)"/>
+  <g fill="none" stroke="#eef8fc" stroke-width="9" stroke-linejoin="round"><path d="M90 470H750M90 470L255 205L420 470L585 205L750 470M255 205H585M255 205V470M585 205V470"/><path d="M910 195H1110V225H1022V480H1110V510H910V480H998V225H910Z"/></g>
+  <g stroke="#ff5b76" stroke-width="12"><path d="M275 212v58M402 395v58M568 212v58"/><path d="M938 210h145M938 350h145M938 495h145"/></g>
+  <g fill="none" stroke="#36caff" stroke-width="4"><path d="M420 90V165" marker-end="url(#arrow)"/><path d="M585 90V165" marker-end="url(#arrow)"/><path d="M90 565H750" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M90 515V590M750 515V590"/><path d="M860 195V510" marker-start="url(#arrow)" marker-end="url(#arrow)"/></g>
+  <g fill="#7ee5ff" font-family="monospace" font-weight="700"><text x="392" y="70" font-size="25">P/2</text><text x="557" y="70" font-size="25">P/2</text><text x="355" y="550" font-size="23">TRUSS SPAN</text><text x="815" y="365" font-size="23" transform="rotate(-90 815 365)">152 mm</text><text x="925" y="570" font-size="22">ALUMINUM I-SECTION</text></g>
+  <g fill="#fff"><circle cx="90" cy="470" r="13"/><circle cx="750" cy="470" r="13"/><circle cx="420" cy="470" r="12"/></g>
+  <text x="75" y="645" fill="#8ddff8" font-family="monospace" font-size="17" letter-spacing="3">DRAWING  •  THEORY  •  EXCEL  •  TESTING</text>
+</svg>

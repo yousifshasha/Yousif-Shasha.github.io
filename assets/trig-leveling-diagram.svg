@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+<title id="title">Trigonometric leveling geometry</title>
+<desc id="desc">Editable vector diagram showing a total station at a known benchmark, a target point, slope distance, zenith angle, instrument height, target height, and vertical elevation difference.</desc>
+<style>
+.label{font-family:Arial,sans-serif;fill:#20231f;font-size:22px}.small{font-size:18px}.blue{fill:#2457ff}.line{stroke:#20231f;stroke-width:4;fill:none}.blueLine{stroke:#2457ff;stroke-width:5;fill:none}.thin{stroke:#7b7f77;stroke-width:2;fill:none}.dash{stroke:#7b7f77;stroke-width:2;stroke-dasharray:8 8;fill:none}.angle{stroke:#2457ff;stroke-width:4;fill:none}.point{fill:#2457ff}.box{fill:#f4f4f0;stroke:#20231f;stroke-width:3}
+</style>
+<rect width="1000" height="620" fill="#f4f4f0"/>
+<text x="55" y="55" class="label" font-weight="700">TRIGONOMETRIC LEVELING</text>
+<text x="55" y="84" class="label small">Elevation difference from slope distance and zenith angle</text>
+
+<!-- ground/reference -->
+<line x1="95" y1="500" x2="900" y2="500" class="line"/>
+<line x1="675" y1="500" x2="675" y2="170" class="dash"/>
+
+<!-- total station -->
+<line x1="260" y1="500" x2="220" y2="575" class="line"/>
+<line x1="260" y1="500" x2="300" y2="575" class="line"/>
+<line x1="260" y1="500" x2="260" y2="575" class="line"/>
+<circle cx="260" cy="465" r="35" class="box"/>
+<rect x="220" y="450" width="80" height="20" class="box"/>
+<circle cx="260" cy="465" r="7" class="point"/>
+<text x="190" y="600" class="label">Known point A</text>
+<text x="170" y="575" class="label small">Total station</text>
+
+<!-- target -->
+<line x1="675" y1="170" x2="675" y2="500" class="line"/>
+<rect x="660" y="155" width="30" height="25" class="box"/>
+<circle cx="675" cy="245" r="8" class="point"/>
+<text x="705" y="245" class="label">Target D</text>
+<text x="705" y="272" class="label small">rod / target height</text>
+
+<!-- sight line -->
+<line x1="260" y1="465" x2="675" y2="245" class="blueLine"/>
+<text x="435" y="318" class="label blue" transform="rotate(-27 435 318)">S = slope distance</text>
+
+<!-- horizontal -->
+<line x1="260" y1="465" x2="675" y2="465" class="thin"/>
+<text x="410" y="452" class="label small">horizontal line</text>
+
+<!-- vertical component -->
+<line x1="675" y1="465" x2="675" y2="245" class="blueLine"/>
+<text x="700" y="370" class="label blue">V = S cos(Z)</text>
+
+<!-- instrument height -->
+<line x1="230" y1="500" x2="230" y2="465" class="thin"/>
+<line x1="220" y1="500" x2="240" y2="500" class="thin"/>
+<line x1="220" y1="465" x2="240" y2="465" class="thin"/>
+<text x="120" y="485" class="label small">hᵢ</text>
+<text x="95" y="510" class="label small">instrument height</text>
+
+<!-- target height -->
+<line x1="725" y1="500" x2="725" y2="465" class="thin"/>
+<line x1="715" y1="500" x2="735" y2="500" class="thin"/>
+<line x1="715" y1="465" x2="735" y2="465" class="thin"/>
+<text x="745" y="485" class="label small">hᵣ</text>
+
+<!-- angle -->
+<path d="M 330 465 A 70 70 0 0 0 319 429" class="angle"/>
+<text x="328" y="430" class="label blue">Z</text>
+<text x="345" y="454" class="label small blue">zenith angle</text>
+
+<!-- formula box -->
+<rect x="55" y="115" width="380" height="125" rx="8" class="box"/>
+<text x="75" y="150" class="label" font-weight="700">Elevation relationship</text>
+<text x="75" y="187" class="label">ΔElev = hᵢ + V − hᵣ</text>
+<text x="75" y="218" class="label small">V = S cos(Z) = S sin(α)</text>
+
+<!-- note -->
+<text x="55" y="535" class="label small">Field measurements: distance, angle, instrument height and target height</text>
+</svg>
