@@ -5,6 +5,9 @@
 
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
 
+@media(min-width:1101px){.skill-grid{grid-template-columns:repeat(4,1fr)}.skill-grid>div{padding:24px}.skill-grid h3{font-size:18px}}
+@media(min-width:851px) and (max-width:1100px){.skill-grid{grid-template-columns:repeat(2,1fr)}}
+
 .survey-map img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* Comfortable reading in a side-by-side browser window. */
