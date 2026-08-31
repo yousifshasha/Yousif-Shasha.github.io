@@ -1,0 +1,696 @@
+:root{--bg:#f4f4f0;--ink:#11120f;--muted:#676963;--line:#d6d6cf;--blue:#2457ff;--dark:#151714}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,Arial,sans-serif}a{color:inherit;text-decoration:none}.nav{height:76px;padding:0 5vw;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);position:sticky;top:0;background:#f4f4f0ed;backdrop-filter:blur(10px);z-index:4}.nav p,.nav a:not(.logo),.eyebrow,label,table caption,th,.metric small{font:500 10px 'DM Mono',monospace;letter-spacing:1.2px}.logo{font-size:24px;font-weight:800}.logo span,.eyebrow{color:var(--blue)}.nav a:not(.logo):hover{color:var(--blue)}.hero{min-height:650px;padding:80px 8vw;display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:center;background:var(--dark);color:#fff}.hero h1{font-size:clamp(70px,9vw,135px);line-height:.84;letter-spacing:-6px;margin:0}.hero h1 span{color:var(--blue)}.intro{max-width:570px;color:#c2c5be;line-height:1.8;margin:35px 0}.chips{display:flex;gap:12px;flex-wrap:wrap;font:10px 'DM Mono'}.chips span{padding:9px 11px;border:1px solid #42453f;color:#bfc2bb}.profile{height:450px;position:relative;overflow:hidden;border:1px solid #42453f;background:#1d201c}.footing{position:absolute;z-index:2;top:45px;left:28%;right:18%;height:55px;border:3px solid #f4f4f0;border-bottom:0;display:flex;justify-content:space-around;padding-top:8px}.footing i{height:42px;width:11px;background:#f4f4f0}.layer{position:absolute;left:0;right:0;padding:15px 24px;font:11px 'DM Mono'}.layer b,.layer small{display:block}.layer small{margin-top:4px;opacity:.75;font-size:9px}.gravel{top:105px;height:110px;background:#5a5944;background-image:radial-gradient(#89866a 1px,transparent 1px);background-size:11px 11px}.clay{top:215px;height:115px;background:#6e6557;background-image:repeating-linear-gradient(170deg,transparent 0 13px,#ffffff1c 14px 15px)}.dense{top:330px;bottom:0;background:#3e413a;background-image:radial-gradient(#777a70 1px,transparent 1px);background-size:9px 9px}.probe{position:absolute;z-index:3;top:15px;right:25%;bottom:15px;width:8px;background:var(--blue)}.probe:after{content:'';position:absolute;bottom:0;left:-5px;border-left:9px solid transparent;border-right:9px solid transparent;border-top:14px solid var(--blue)}.profile em{position:absolute;z-index:3;bottom:12px;right:15px;font:9px 'DM Mono';font-style:normal}.section{padding:105px 8vw;border-top:1px solid var(--line)}.overview,header{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.overview h2,.experiment h2{font-size:clamp(40px,5vw,65px);line-height:.98;letter-spacing:-3px;margin:0}.overview p,.experiment>header>p{margin:0;color:var(--muted);font-size:16px;line-height:1.8}.rail{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);margin-top:65px}.rail a{min-height:110px;padding:22px 15px 10px 0;border-right:1px solid var(--line);font-size:14px;font-weight:800}.rail a:not(:first-child){padding-left:15px}.rail b,.rail small{display:block}.rail b{font:11px 'DM Mono';color:var(--blue);margin-bottom:17px}.rail small{font:10px 'DM Mono';color:var(--muted);margin-top:6px}.metrics{background:#e8e8e1}.metrics>div,.synthesis>div{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.metrics article{border-top:2px solid var(--ink);padding-top:16px}.metrics b{display:block;font-size:37px;letter-spacing:-2px;margin:12px 0 5px}.metrics b span{font-size:16px;letter-spacing:-1px}.metrics p{color:var(--muted);font-size:12px;margin:0}.experiment>header{align-items:end;margin-bottom:52px}.experiment header .eyebrow{margin-bottom:15px}.grid{display:grid;gap:24px}.two{grid-template-columns:1.5fr .8fr}.lower{grid-template-columns:1fr 1fr;margin-top:24px}.card,.table{background:#fff;border:1px solid var(--line)}label{display:flex;justify-content:space-between;color:var(--muted);padding:17px;border-bottom:1px solid var(--line)}label b{color:var(--ink);font-weight:500}.atterberg{padding-bottom:24px}.states{display:grid;grid-template-columns:repeat(4,1fr);height:94px;margin:50px 28px 8px}.states span{position:relative;border-left:1px solid var(--line);padding-top:65px;font:10px 'DM Mono';color:var(--muted)}.states span:after{content:'';position:absolute;bottom:20px;left:0;right:0;height:17px;background:#b6b6ae}.states span:nth-child(2):after{height:28px}.states .on:after{height:42px;background:var(--blue)}.limits{height:66px;position:relative;margin:0 28px}.limits i{position:absolute;top:0;border-left:1px dashed var(--ink);padding:7px 0 0 7px;height:32px;font:10px 'DM Mono';font-style:normal}.limits i:first-child{left:37%}.limits i:nth-child(2){left:73%}.limits b{position:absolute;top:42px;left:37%;width:36%;border-top:2px solid var(--blue);text-align:center;color:var(--blue);font:10px 'DM Mono';padding-top:7px}.atterberg>p,.copy{font-size:13px;line-height:1.7}.atterberg>p{color:var(--muted);margin:0 28px}.copy{padding:30px}.copy h3{font-size:30px;line-height:1.05;letter-spacing:-1.5px;margin:10px 0 18px}.copy>p:not(.eyebrow){color:var(--muted)}code{display:block;margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font:11px 'DM Mono'}.grains{padding-bottom:20px}.pebbles{height:125px;background:#23251f;margin:20px}.pebbles i{display:block;position:absolute;border-radius:50%;background:#f4f4f0}.pebbles{position:relative}.pebbles i:nth-child(1){width:75px;height:75px;left:10%;top:23px}.pebbles i:nth-child(2){width:36px;height:36px;left:31%;top:70px;background:var(--blue)}.pebbles i:nth-child(3){width:20px;height:20px;left:48%;top:28px}.pebbles i:nth-child(4){width:12px;height:12px;left:66%;top:88px}.pebbles i:nth-child(5){width:6px;height:6px;left:82%;top:50px}.grains p{margin:0 20px;display:flex;gap:17px;flex-wrap:wrap;font:10px 'DM Mono'}.grains p span:first-child{color:var(--blue)}table{width:100%;border-collapse:collapse;font-size:13px;min-width:450px}caption{text-align:left;padding:17px;color:var(--muted);border-bottom:1px solid var(--line)}th,td{text-align:left;padding:13px 17px;border-bottom:1px solid var(--line)}th{font-size:9px;color:var(--muted)}tr:last-child td{border-bottom:0}.table{overflow-x:auto}.table>p{padding:0 17px;font-size:12px;line-height:1.6;color:var(--muted)}.dark{background:var(--dark);color:#fff;border-color:#353830}.dark .experiment>header>p,.dark>header>p{color:#b6b9b2}.chartrow{grid-template-columns:1.5fr .8fr}.chart svg{display:block;width:100%;padding:15px}.g path{stroke:#ddd;stroke-width:1}.t{font:10px 'DM Mono';fill:#666}.curve{fill:none;stroke:var(--blue);stroke-width:4}.dots circle{fill:#fff;stroke:var(--blue);stroke-width:3}.guide{stroke:#111;stroke-dasharray:4 4}.pt{font:10px 'DM Mono';fill:var(--blue)}.dark .copy{background:#20231e;border-color:#41443e}.dark .copy h3{color:#fff}.dark .copy>p:not(.eyebrow){color:#b7bbb3}.copy dl,.strength dl{margin:27px 0 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr}.dark .copy dl,.strength dl{border-color:#41443e}.copy dt,.copy dd,.strength dt,.strength dd{padding:11px 0;border-bottom:1px solid var(--line);font-size:12px}.copy dt,.strength dt{color:var(--muted)}.dark .copy dt,.strength dt{color:#b7bbb3}.copy dd,.strength dd{text-align:right;margin:0;font-weight:700}.darktable{margin-top:24px;background:#20231e;border-color:#41443e}.darktable caption,.darktable th,.darktable td{border-color:#41443e;color:#fff}.darktable caption,.darktable th{color:#b7bbb3}.darktable .peak{background:#2457ff30}.flow{padding:0 28px 28px}.flow h3{font-size:27px;letter-spacing:-1px;margin:24px 0 8px}.flow strong{font:700 30px 'DM Mono';color:var(--blue)}.flow strong small{font-size:12px}.flow p{font-size:13px;line-height:1.7;color:var(--muted)}.flowdraw{height:195px;margin:0 -28px 24px;background:#1d211f;border-bottom:1px solid var(--line);position:relative;overflow:hidden}.flowdraw b{position:absolute;top:16px;left:18px;color:#fff;font:10px 'DM Mono'}.flowdraw em{position:absolute;left:34%;right:27%;bottom:58px;height:48px;border:3px solid #f4f4f0;background:#6e6557;background-image:radial-gradient(#d6d6ce 2px,transparent 3px);background-size:11px 11px}.flowdraw i{position:absolute;z-index:2;height:3px;left:20%;right:24%;bottom:72px;background:var(--blue)}.constant i:nth-of-type(1){transform:translateY(-17px)}.constant i:nth-of-type(3){transform:translateY(17px)}.falling:before{content:'';position:absolute;left:25%;top:33px;width:23px;height:136px;border:3px solid #f4f4f0}.falling:after{content:'';position:absolute;left:28%;top:65px;width:17px;height:100px;background:var(--blue)}.falling em{left:34%;right:18%;bottom:38px;background-image:radial-gradient(#d6d6ce 1px,transparent 2px);background-size:6px 6px}.falling i{left:31%;right:18%;bottom:62px}.falling i:nth-of-type(2){transform:translateY(-16px);opacity:.65}.note{margin-top:24px;padding:15px 18px;border-left:3px solid var(--blue);background:#e8e8e1;font:11px 'DM Mono'}.pale{background:#edede7}.oed{padding-bottom:20px}.oedometer{height:230px;position:relative;margin:0 30px}.oedometer div{position:absolute;left:42%;top:18px;width:70px;height:25px;border-bottom:12px solid #111;box-shadow:0 12px 0 #111,0 24px 0 #111}.oedometer i{position:absolute;top:72px;left:25%;right:25%;height:15px;background:#77776e}.oedometer b{position:absolute;top:87px;left:25%;right:25%;height:110px;border:8px solid #77776e;background:#746a5d;background-image:repeating-linear-gradient(170deg,transparent 0 13px,#ffffff30 14px 15px)}.oedometer em{position:absolute;top:197px;left:20%;right:20%;height:13px;background:#111}.oed>p{margin:0 30px;font:11px 'DM Mono';color:var(--muted)}.oed>p span{color:var(--blue);padding:0 10px}.strength{background:#20231e;border-color:#41443e;color:#fff;padding:0 28px 28px}.strength>p:last-child{font-size:13px;color:#b7bbb3;line-height:1.7}.shear,.ucs{height:190px;margin:0 -28px 24px;background:#181a17;border-bottom:1px solid #41443e;position:relative}.shear b{position:absolute;left:25%;right:25%;height:50px;background:#706557;border:3px solid #cbc9c0}.shear b:first-of-type{top:55px;transform:translateX(-9px)}.shear b:nth-of-type(2){top:105px;transform:translateX(9px)}.shear i,.shear em{position:absolute;color:var(--blue);font:32px 'DM Mono';font-style:normal;z-index:2}.shear i{left:50%;top:10px}.shear em{right:18%;bottom:15px}.ucs b{position:absolute;left:27%;right:27%;height:15px;background:#d6d6cf}.ucs b:first-of-type{top:35px}.ucs b:nth-of-type(2){bottom:28px}.ucs em{position:absolute;top:50px;bottom:43px;left:38%;right:38%;background:#736859;border-radius:20px 20px 5px 5px}.ucs i{position:absolute;left:50%;transform:translateX(-50%);color:var(--blue);font:23px 'DM Mono';font-style:normal;z-index:2}.ucs i:first-child{top:4px}.ucs i:last-child{bottom:3px}.synthesis{background:var(--blue);color:#fff}.synthesis .eyebrow{color:#d3ddff}.synthesis h2{max-width:900px;font-size:clamp(37px,5vw,65px);letter-spacing:-3px;line-height:1.02;margin:0}.synthesis>div{margin-top:62px}.synthesis article>b{font:11px 'DM Mono';color:#d3ddff}.synthesis h3{font-size:20px;margin:17px 0 8px}.synthesis article p{font-size:13px;line-height:1.7;color:#e2e8ff}footer{display:flex;justify-content:space-between;padding:25px 8vw;font:10px 'DM Mono';color:var(--muted)}@media(max-width:850px){.nav p{display:none}.hero,.overview,header{grid-template-columns:1fr}.hero{padding:75px 7vw}.profile{height:360px}.section{padding:75px 7vw}.rail{grid-template-columns:1fr 1fr}.rail a{border-bottom:1px solid var(--line)}.metrics>div,.synthesis>div{grid-template-columns:1fr 1fr}.two,.lower,.chartrow{grid-template-columns:1fr}.experiment>header{gap:25px}.flow{padding-left:20px;padding-right:20px}.flowdraw,.strength>div{margin-left:-20px;margin-right:-20px}}@media(max-width:520px){.hero h1{font-size:65px;letter-spacing:-4px}.profile{height:285px}.section{padding:65px 6vw}.rail,.metrics>div,.synthesis>div{grid-template-columns:1fr}footer{padding:25px 6vw;flex-direction:column;gap:10px}}
+
+@media(max-width:1100px){.nav{padding:0 6vw}.nav p{font-size:11px}.nav a:not(.logo){font-size:11px}.hero{grid-template-columns:1fr;padding:70px 7vw;gap:45px}.hero h1{font-size:clamp(68px,10vw,105px)}.profile{max-width:700px;height:390px}.section{padding:85px 7vw}.overview,header{gap:5vw}.overview p,.experiment>header>p{font-size:17px}.rail a{font-size:15px}.metrics b{font-size:34px}label,.eyebrow,table caption,th{font-size:11px}.card,.table{font-size:14px}.atterberg>p,.copy,.flow p,.strength>p:last-child{font-size:14px}.table>p{font-size:13px}table{font-size:14px;min-width:420px}th,td{padding:14px 16px}.copy dt,.copy dd,.strength dt,.strength dd{font-size:13px}.note{font-size:12px}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geotechnical Experiments | Yousif Shasha</title>
+  <link rel="stylesheet" href="geotech.css">
+</head>
+<body>
+  <header class="nav"><a class="logo" href="index.html">YS<span>.</span></a><p>PROJECT 02 / GEOTECHNICAL EXPERIMENTS</p><a href="index.html#projects">← Back to portfolio</a></header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">CVL 434 · GEOTECHNICAL PROPERTIES OF SOILS · WINTER 2026</p><h1>Soil is<br><span>a system.</span></h1><p class="intro">A five-part laboratory investigation of how soil classifies, compacts, drains, settles, and resists failure. Each experiment isolates one behaviour; together, they inform the ground conditions beneath a structure.</p><div class="chips"><span>05 experiments</span><span>Group 02</span><span>TMU</span></div></div><div class="profile"><div class="footing"><i></i><i></i><i></i></div><div class="layer gravel"><b>GRAVEL / SAND</b><small>High drainage</small></div><div class="layer clay"><b>SILTY CLAY</b><small>Compressible</small></div><div class="layer dense"><b>DENSE STRATUM</b><small>Strength-bearing</small></div><div class="probe"></div><em>SITE PROFILE / NOT TO SCALE</em></div></section>
+    <section class="section"><p class="eyebrow">01 / PROJECT OVERVIEW</p><div class="overview"><h2>From grain to ground response.</h2><p>The experiments use different soil samples and test setups, so this page presents a coordinated laboratory series rather than one continuous specimen history. The results form a practical toolkit: identify the material, place it correctly, predict water movement and settlement, then evaluate failure resistance.</p></div><div class="rail"><a href="#classification"><b>01</b>Classification<small>Atterberg + sieve</small></a><a href="#compaction"><b>02</b>Compaction<small>Moisture-density</small></a><a href="#permeability"><b>03</b>Permeability<small>Flow through soil</small></a><a href="#consolidation"><b>04</b>Consolidation<small>Settlement response</small></a><a href="#strength"><b>05</b>Shear strength<small>DST + UCS</small></a></div></section>
+    <section class="section metrics"><p class="eyebrow">02 / KEY MEASUREMENTS</p><div><article><small>LIQUID LIMIT</small><b>28.90<span>%</span></b><p>Water content at 25 blows</p></article><article><small>MAX. DRY UNIT WEIGHT</small><b>19.54<span> kN/m³</span></b><p>At 6-7% moisture</p></article><article><small>PRECONSOLIDATION STRESS</small><b>215<span> kPa</span></b><p>Overconsolidated clay</p></article><article><small>FRICTION ANGLE</small><b>37.4<span>°</span></b><p>Direct shear result</p></article></div></section>
+    <section id="classification" class="section experiment"><header><div><p class="eyebrow">EXPERIMENT 01</p><h2>Material identification</h2></div><p>Atterberg limits and sieve analysis establish the consistency and particle-size characteristics used to classify soil behaviour.</p></header><div class="grid two"><article class="card atterberg"><label>CONSISTENCY STATES <b>CLAY SAMPLE</b></label><div class="states"><span>Solid</span><span>Semi-solid</span><span class="on">Plastic</span><span>Liquid</span></div><div class="limits"><i>PL 13.37%</i><i>LL 28.90%</i><b>PI = 15.53%</b></div><p>As water content increases, the sample transitions through a workable plastic range before behaving as a liquid.</p></article><article class="copy card"><p class="eyebrow">INTERPRETATION</p><h3>Moderate plasticity range.</h3><p>The plastic-limit trials were tightly grouped: 13.33%, 13.33%, and 13.46%. The flow curve estimated the liquid limit at 28.90%.</p><code>PI = LL − PL = 28.90 − 13.37 = <b>15.53</b></code></article></div><div class="grid two lower"><article class="card grains"><label>GRAIN-SIZE COMPOSITION <b>997.7 g SAMPLE</b></label><div class="pebbles"><i></i><i></i><i></i><i></i><i></i></div><p><span>● Gravel 57.47%</span><span>● Sand 39.57%</span><span>● Fines 2.96%</span></p></article><div class="table"><table><caption>Sieve analysis summary</caption><thead><tr><th>Fraction</th><th>Range</th><th>Share</th><th>Reading</th></tr></thead><tbody><tr><td>Gravel</td><td>&gt;4.75 mm</td><td>57.47%</td><td>Dominant</td></tr><tr><td>Sand</td><td>0.075-4.75 mm</td><td>39.57%</td><td>Significant</td></tr><tr><td>Fines</td><td>&lt;0.075 mm</td><td>2.96%</td><td>Low</td></tr></tbody></table><p>Mass loss: 0.015%, well below the 5% acceptance check. The broad grading was interpreted as a well-graded gravelly soil with sand.</p></div></div></section>
+    <section id="compaction" class="section experiment dark"><header><div><p class="eyebrow">EXPERIMENT 02</p><h2>Compaction window</h2></div><p>Standard Proctor compaction identifies the water content range that produces the greatest dry unit weight for the tested soil.</p></header><div class="grid chartrow"><article class="card chart"><label>MOISTURE-DENSITY CURVE <b>STANDARD PROCTOR</b></label><svg viewBox="0 0 620 300" role="img" aria-label="Compaction curve with maximum dry unit weight at 6 to 7 percent water content"><g class="g"><path d="M62 25V252H590M62 205H590M62 157H590M62 109H590M62 61H590"/></g><g class="t"><text x="8" y="66">20.0</text><text x="8" y="114">19.5</text><text x="8" y="162">19.0</text><text x="8" y="210">18.5</text><text x="57" y="278">0</text><text x="184" y="278">4</text><text x="311" y="278">8</text><text x="438" y="278">12</text><text x="560" y="278">16</text><text x="208" y="296">Water content, w (%)</text></g><path class="curve" d="M181 153 C223 113 248 72 285 72 S357 93 394 124 S462 196 476 225"/><g class="dots"><circle cx="181" cy="153" r="6"/><circle cx="241" cy="91" r="6"/><circle cx="285" cy="91" r="7"/><circle cx="353" cy="111" r="6"/><circle cx="476" cy="225" r="6"/></g><path class="guide" d="M267 72V252"/><text class="pt" x="276" y="52">19.54 kN/m³</text><text class="pt" x="276" y="69">optimum ≈ 6-7%</text></svg></article><article class="copy card"><p class="eyebrow">FIELD TAKEAWAY</p><h3>Add enough water to lubricate, not float.</h3><p>Dry unit weight rose from 19.03 kN/m³ at 3.73% water content to 19.54 kN/m³ at about 6-7%. Beyond optimum, water occupied void space and it fell to 18.31 kN/m³.</p><dl><dt>Mould volume</dt><dd>0.000943 m³</dd><dt>Compaction effort</dt><dd>3 layers × 25 blows</dd><dt>Specific gravity</dt><dd>2.76</dd></dl></article></div><div class="table darktable"><table><caption>Measured compaction response</caption><thead><tr><th>Trial</th><th>Water content</th><th>Dry density</th><th>Dry unit weight</th></tr></thead><tbody><tr><td>1</td><td>3.73%</td><td>1,939.76 kg/m³</td><td>19.03 kN/m³</td></tr><tr class="peak"><td>2</td><td>5.62%</td><td>1,992.50 kg/m³</td><td>19.54 kN/m³</td></tr><tr class="peak"><td>3</td><td>7.03%</td><td>1,992.08 kg/m³</td><td>19.54 kN/m³</td></tr><tr><td>4</td><td>9.21%</td><td>1,973.59 kg/m³</td><td>19.36 kN/m³</td></tr><tr><td>5</td><td>13.14%</td><td>1,866.39 kg/m³</td><td>18.31 kN/m³</td></tr></tbody></table></div></section>
+    <section id="permeability" class="section experiment"><header><div><p class="eyebrow">EXPERIMENT 03</p><h2>Water pathways</h2></div><p>Constant-head and falling-head tests quantified hydraulic conductivity for coarse and finer granular material.</p></header><div class="grid two"><article class="flow card"><div class="flowdraw constant"><b>CONSTANT HEAD</b><i></i><i></i><i></i><em></em></div><h3>Coarse gravel</h3><strong>6.87 × 10<sup>-3</sup> <small>cm/s</small></strong><p>Average k. Lower than expected for coarse gravel; fines and reduced void space were identified as likely influences.</p></article><article class="flow card"><div class="flowdraw falling"><b>FALLING HEAD</b><i></i><i></i><em></em></div><h3>Finer sand</h3><strong>1.38 × 10<sup>-3</sup> <small>cm/s</small></strong><p>Average k. The lower value is consistent with smaller pore spaces and more restricted flow.</p></article></div><div class="note"><b>Test geometry:</b> specimen diameter 10.8 cm · specimen length 11.3 cm · area 91.56 cm² · head difference 140 cm.</div></section>
+    <section id="consolidation" class="section experiment pale"><header><div><p class="eyebrow">EXPERIMENT 04</p><h2>Settlement under load</h2></div><p>An oedometer test tracked void-ratio change and the time-dependent settlement response of a fine-grained soil.</p></header><div class="grid chartrow"><article class="card oed"><label>ONE-DIMENSIONAL CONSOLIDATION <b>SILTY CLAY</b></label><div class="oedometer"><div></div><i></i><b></b><em></em></div><p>Void ratio: <b>0.95</b> <span>→</span> <b>0.63</b> as effective stress increased.</p></article><article class="copy card"><p class="eyebrow">INTERPRETATION</p><h3>Overconsolidated, moderately compressible soil.</h3><p>The preconsolidation pressure of 215.44 kPa exceeded the estimated in-situ effective stress of 92 kPa, giving an OCR of 2.34.</p><dl><dt>Compression index, C<sub>c</sub></dt><dd>0.38</dd><dt>Recompression index, C<sub>r</sub></dt><dd>0.066</dd><dt>Approx. t<sub>90</sub></dt><dd>25 min</dd></dl></article></div><div class="table"><table><caption>Consolidation parameters</caption><thead><tr><th>Parameter</th><th>Measured value</th><th>Design reading</th></tr></thead><tbody><tr><td>Preconsolidation stress</td><td>215.44 kPa</td><td>Past stress exceeds current stress</td></tr><tr><td>Overconsolidation ratio</td><td>2.34</td><td>Overconsolidated</td></tr><tr><td>C<sub>v</sub>, log-time</td><td>1.33 × 10<sup>-3</sup> cm²/s</td><td>At 50.08% consolidation</td></tr><tr><td>C<sub>v</sub>, root-time</td><td>4.93 × 10<sup>-4</sup> cm²/s</td><td>At 90.00% consolidation</td></tr></tbody></table></div></section>
+    <section id="strength" class="section experiment dark"><header><div><p class="eyebrow">EXPERIMENT 05</p><h2>Resistance to failure</h2></div><p>Direct shear and unconfined compression tests measured frictional and undrained strength response.</p></header><div class="grid two"><article class="strength card"><div class="shear"><i>↓</i><b></b><b></b><em>→</em></div><p class="eyebrow">DIRECT SHEAR TEST</p><h3>Mohr-Coulomb envelope</h3><dl><dt>Cohesion, c</dt><dd>8.44 kPa</dd><dt>Friction angle, φ</dt><dd>37.4°</dd><dt>Linear fit</dt><dd>R² = 0.9993</dd></dl><p>Peak shear stress: 49.54 kPa at 2 kg, 93.27 kPa at 4 kg, and 133.13 kPa at 6 kg.</p></article><article class="strength card"><div class="ucs"><i>↓</i><b></b><em></em><b></b><i>↑</i></div><p class="eyebrow">UNCONFINED COMPRESSION</p><h3>Undrained clay strength</h3><dl><dt>q<sub>u</sub>, peak stress</dt><dd>283.73 kPa</dd><dt>s<sub>u</sub> = q<sub>u</sub>/2</dt><dd>141.87 kPa</dd></dl><p>The UCS result captures the saturated cohesive sample’s failure under axial loading with no confining pressure.</p></article></div></section>
+    <section class="section synthesis"><p class="eyebrow">SYNTHESIS / WHAT THE TESTS SAY</p><h2>Engineering decisions become clearer when each soil behaviour has a measurement behind it.</h2><div><article><b>01</b><h3>Place and compact</h3><p>The moisture-density curve defines the best working range for controlled fill.</p></article><article><b>02</b><h3>Manage water</h3><p>Hydraulic conductivity differentiates free-draining granular layers from finer material.</p></article><article><b>03</b><h3>Allow for movement</h3><p>Consolidation parameters frame time-dependent settlement expectations.</p></article><article><b>04</b><h3>Check stability</h3><p>Shear and compressive strength guide bearing and slope assessments.</p></article></div></section>
+  </main><footer><span>Yousif Shasha · Civil Engineering Portfolio</span><span>CVL 434 Laboratory Series · Winter 2026</span></footer>
+</body>
+</html>
+
+.hydraulic-page{--navy:#0a1c28;--blue:#1688c7;--aqua:#77e1e2;--ice:#e8f6f6;--orange:#ff633c;background:#f4f4f0}.hydraulic-page .nav{background:rgba(244,244,240,.94)}.hydro-hero{min-height:720px;background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:70px 8vw;display:grid;grid-template-columns:1.08fr .92fr;align-items:center}.hydro-grid{position:absolute;inset:0;opacity:.13;background-image:linear-gradient(#c7eff0 1px,transparent 1px),linear-gradient(90deg,#c7eff0 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(90deg,#000 15%,transparent 85%)}.hero-inner,.hero-diagram{position:relative}.back{display:inline-block;font:500 11px 'DM Mono';letter-spacing:1px;color:var(--aqua);margin-bottom:65px}.hydro-hero .eyebrow,.hydro-hero .tag{color:var(--aqua)}.hydro-hero h1{font-size:clamp(70px,10vw,138px);line-height:.84;letter-spacing:-7px;margin:25px 0}.hydro-hero h1 span{color:var(--aqua)}.hero-summary{font-size:18px;line-height:1.65;color:#c4d7dc;max-width:560px}.hero-facts{display:flex;gap:45px;margin-top:45px}.hero-facts div{display:grid;gap:5px}.hero-facts strong{font:700 42px/1 'DM Mono';color:var(--aqua)}.hero-facts span{font:10px 'DM Mono';text-transform:uppercase;color:#a3c1ca}.hero-diagram{height:415px;border:1px solid #39717d;background:linear-gradient(135deg,#103141,#0b202b);padding:25px;box-shadow:18px 18px 0 var(--blue)}.hero-diagram p{font:11px 'DM Mono';letter-spacing:1px;color:#a5d9da}.flow-line{position:absolute;left:12%;right:12%;top:49%;height:5px;background:var(--aqua);display:flex;justify-content:space-between;align-items:center}.flow-line:before,.flow-line:after{content:'';width:40px;height:40px;border:3px solid var(--aqua);border-radius:50%;background:var(--navy)}.flow-line i{width:15px;height:15px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 8px rgba(119,225,226,.12)}.flow-labels{position:absolute;left:12%;right:12%;top:59%;display:flex;justify-content:space-around;font:11px 'DM Mono';color:#c7e7e8}.project-overview{padding:100px 8vw 80px;display:grid;grid-template-columns:190px minmax(0,1fr);gap:35px;border-bottom:1px solid var(--line)}.project-overview .eyebrow{color:var(--blue);margin:7px 0}.overview-copy{font-size:clamp(25px,3.1vw,43px);line-height:1.2;letter-spacing:-1.7px;margin:0;max-width:960px}.part-nav{grid-column:2;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.part-nav a{border-top:2px solid var(--ink);padding:12px 0;font:600 12px 'DM Mono';text-transform:uppercase}.part-nav b{color:var(--blue);margin-right:8px}.case-part{padding:110px 8vw;border-bottom:1px solid var(--line)}.part-heading{display:grid;grid-template-columns:190px minmax(0,1.25fr) minmax(240px,.75fr);gap:35px;align-items:start;margin-bottom:55px}.part-heading>span{font:500 11px 'DM Mono';color:var(--blue)}.part-heading h2{font-size:clamp(40px,5vw,68px);line-height:.95;letter-spacing:-3px;margin:0}.part-heading p{font-size:15px;line-height:1.75;color:var(--muted);margin:0}.dark-part{background:var(--navy);color:#fff}.dark-part .part-heading>span{color:var(--aqua)}.dark-part .part-heading p{color:#b4cbd1}.diagram-panel{height:300px;background:#102f3e;border:1px solid #49737d;position:relative;overflow:hidden}.bernoulli-diagram:after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(166,230,232,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(166,230,232,.1) 1px,transparent 1px);background-size:40px 40px}.pipe-shape{position:absolute;z-index:2;left:9%;right:9%;top:48%;height:54px;background:var(--ice);clip-path:polygon(0 0,26% 0,43% 26%,57% 26%,74% 0,100% 0,100% 100%,74% 100%,57% 74%,43% 74%,26% 100%,0 100%)}.water-line{position:absolute;z-index:3;left:9%;right:9%;top:57%;height:5px;background:var(--blue)}.energy-line{position:absolute;z-index:3;left:12%;right:12%;top:31%;height:2px;background:var(--aqua);transform:rotate(-2deg)}.head-label{position:absolute;z-index:4;top:12%;font:11px 'DM Mono';color:var(--aqua)}.h-one{left:15%}.h-two{left:31%}.h-three{left:47%}.h-four{left:63%}.h-five{right:15%}.diagram-panel p{position:absolute;z-index:4;bottom:13px;left:20px;margin:0;font:11px 'DM Mono';color:#bbd8de}.three-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}.three-cards article{border:1px solid #47707b;padding:27px;min-height:285px;position:relative}.three-cards .tag{color:var(--aqua)}.three-cards h3,.channel-grid h3,.hec-bottom h3{font-size:27px;letter-spacing:-1.2px;margin:10px 0}.three-cards p:not(.tag){font-size:14px;line-height:1.65;color:#c1d4d8}.micro-result{position:absolute;bottom:23px;left:27px;display:flex;gap:9px;align-items:baseline}.micro-result b{font:600 17px 'DM Mono';color:var(--aqua)}.micro-result span{font-size:10px;color:#a7c0c6}.three-cards img{width:100%;max-height:100px;object-fit:contain;object-position:left bottom;filter:saturate(.8);margin-top:8px}.bend-sketch{position:absolute;bottom:32px;left:30px;display:flex;gap:20px}.bend-sketch i{width:37px;height:37px;border:3px solid var(--aqua);border-left:0;border-bottom:0;border-radius:0 30px 0 0;transform:rotate(90deg)}.bend-sketch i:nth-child(2){border-radius:0 55px 0 0}.bend-sketch i:nth-child(3){border-radius:0 17px 0 0}.bend-sketch i:nth-child(4){border-radius:0 45px 0 0}.insight-bar{display:grid;grid-template-columns:190px 1fr;gap:35px;border-top:1px solid #47707b;margin-top:25px;padding:25px 0 0}.insight-bar b{font:11px 'DM Mono';color:var(--aqua);text-transform:uppercase}.insight-bar p{margin:0;font-size:18px;line-height:1.5;color:#d9e7e9}.epanet-part{background:#eaf6f5}.network-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:stretch}.network-diagram{background:var(--navy);padding:28px;color:#fff;position:relative}.network-diagram .source{font:10px 'DM Mono';color:var(--aqua)}.network-diagram svg{width:100%;height:315px}.pipes path{fill:none;stroke:#73a5b3;stroke-width:7;stroke-linecap:round}.nodes circle{fill:#eef8f8;stroke:#0a1c28;stroke-width:4}.nodes .focus-node{fill:var(--orange);stroke:#fff;stroke-width:5}.letters text{font:600 17px 'DM Mono';fill:#e9f9f9}.network-key{font:10px 'DM Mono';color:#a7cbd2;display:flex;align-items:center;gap:8px}.network-key i{width:25px;height:4px;background:#73a5b3}.network-key .focus{background:var(--orange);margin-left:14px}.network-copy{padding:28px;border:1px solid #bcd5d2;background:#f7fcfb}.network-copy .eyebrow{color:var(--blue)}.network-copy ul{padding:0;margin:20px 0;list-style:none}.network-copy li{border-bottom:1px solid #c9dcd9;padding:11px 0;font-size:15px}.network-copy li:before{content:'↗';color:var(--blue);padding-right:10px}.network-copy p:last-child{font-size:14px;line-height:1.7;color:var(--muted)}.scenario-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}.scenario-grid article{background:#fff;padding:22px;border-top:3px solid var(--blue)}.scenario-grid h3{margin:9px 0 16px;font-size:22px;letter-spacing:-1px}.delta{display:grid;grid-template-columns:1fr;gap:3px;padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.delta span{font:10px 'DM Mono';color:var(--muted);margin-top:5px}.delta b{font:600 14px 'DM Mono';color:var(--navy)}.scenario-grid article>p:last-child{font-size:12px;line-height:1.55;color:var(--muted);margin:15px 0 0}.open-part{background:#fff}.channel-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.weir-card,.sluice-card{border:1px solid var(--line);padding:26px}.weir-sketch{height:190px;background:#dff1f0;position:relative;overflow:hidden;margin-bottom:28px}.water-surface{position:absolute;top:45px;left:0;right:52%;height:60px;background:#1688c7}.notch{position:absolute;bottom:-10px;left:49%;width:100px;height:115px;background:#293d40;clip-path:polygon(0 0,100% 0,100% 100%,50% 45%,0 100%)}.falling-water{position:absolute;top:102px;left:calc(49% + 38px);width:25px;height:100px;background:var(--blue);clip-path:polygon(0 0,100% 0,73% 100%,28% 100%)}.two-metrics{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:22px;padding-top:18px}.two-metrics div{display:grid;gap:4px}.two-metrics b{font:600 27px 'DM Mono';color:var(--blue)}.two-metrics span{font-size:11px;color:var(--muted)}.sluice-card img{display:block;width:100%;height:190px;object-fit:contain;background:#f7f7f4;margin-bottom:28px}.channel-grid p:not(.tag){font-size:14px;color:var(--muted);line-height:1.65}.result-compare{display:grid;grid-template-columns:1fr 1fr;gap:5px;border-top:1px solid var(--line);padding-top:15px;margin-top:20px}.result-compare span,.result-compare small{font:10px 'DM Mono';color:var(--muted);grid-column:span 2}.result-compare b{font:600 13px 'DM Mono'}.energy-equation{margin-top:20px;background:var(--navy);color:#fff;padding:30px;display:flex;align-items:center;gap:16px}.energy-equation span{font:600 28px 'DM Mono';color:var(--aqua)}.energy-equation strong{font:600 30px 'DM Mono';border-bottom:2px solid var(--aqua);line-height:1.3}.energy-equation strong i{font-style:normal;border-left:1px solid #fff;padding-left:7px}.energy-equation p{margin:0 0 0 auto;max-width:470px;color:#c9dfe1;font-size:14px;line-height:1.6}.hec-part{background:#e8f0f2}.hec-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:20px}.hec-copy{padding:32px;background:#fff}.hec-copy .eyebrow{color:var(--blue)}.hec-copy h3{font-size:32px;letter-spacing:-1.5px;margin:12px 0 28px}.event-bars{display:grid;gap:13px}.event-bars div{display:grid;grid-template-columns:75px 1fr 52px;align-items:center;gap:8px;font:11px 'DM Mono'}.event-bars b{background:var(--blue);color:#fff;padding:9px 6px;white-space:nowrap;font-weight:500}.event-bars div:nth-child(2) b{background:#1d6e9d}.event-bars div:nth-child(3) b{background:var(--navy)}.event-bars em{font-style:normal;color:var(--muted)}.hec-copy>p:not(.eyebrow){font-size:14px;line-height:1.65;color:var(--muted);margin:28px 0}.reach-note{border-top:1px solid var(--line);padding-top:14px;display:grid;gap:5px;font-size:12px;color:var(--muted)}.reach-note b{font:11px 'DM Mono';color:var(--ink)}.hec-layout figure{margin:0;background:#fff;padding:12px;display:flex;flex-direction:column}.hec-layout figure img{width:100%;height:337px;object-fit:contain}.hec-layout figcaption{font:10px 'DM Mono';line-height:1.5;color:var(--muted);padding:9px 5px 2px}.hec-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}.hec-bottom article{border-top:3px solid var(--blue);background:#fff;padding:24px}.hec-bottom p:not(.tag){color:var(--muted);font-size:13px;line-height:1.65}.velocity{display:grid;grid-template-columns:1fr 1fr;gap:6px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;font:11px 'DM Mono'}.velocity b{font-size:15px}.reflection{padding:120px 8vw;background:var(--navy);color:#fff}.reflection .eyebrow{color:var(--aqua)}.reflection h2{font-size:clamp(42px,6vw,80px);line-height:.95;letter-spacing:-4px;margin:20px 0 25px}.reflection h2 span{color:var(--aqua)}.reflection>p:not(.eyebrow){max-width:700px;color:#c0d5d9;font-size:18px;line-height:1.7}.software-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:40px}.software-row span{border:1px solid #4a7780;padding:11px 16px;font:11px 'DM Mono';color:#d4e8e9}@media(max-width:900px){.hydro-hero,.project-overview,.part-heading,.network-layout,.hec-layout{grid-template-columns:1fr}.hydro-hero{padding-top:40px}.hero-diagram{margin-top:55px}.project-overview .part-nav{grid-column:1}.part-nav{grid-template-columns:repeat(2,1fr)}.three-cards,.scenario-grid,.hec-bottom{grid-template-columns:repeat(2,1fr)}.part-heading{gap:20px}.energy-equation{flex-wrap:wrap}.energy-equation p{margin:0;max-width:none}}@media(max-width:600px){.hydro-hero,.case-part,.project-overview,.reflection{padding-left:7vw;padding-right:7vw}.hero-facts{gap:20px}.hero-facts strong{font-size:30px}.hero-diagram{height:280px;box-shadow:10px 10px 0 var(--blue)}.part-nav,.three-cards,.scenario-grid,.channel-grid,.hec-bottom{grid-template-columns:1fr}.part-heading h2{letter-spacing:-2px}.network-diagram{padding:16px}.network-diagram svg{height:230px}.hec-layout figure img{height:auto}.energy-equation{display:block}.energy-equation strong{display:inline-block;margin-left:8px}.energy-equation p{margin-top:15px}}
+
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Hydraulic Engineering | Yousif Shasha</title><meta name="description" content="A CVL 502 hydraulic engineering case study by Yousif Shasha: laboratory testing, EPANET pipe networks, open-channel flow, and HEC-RAS flood modelling."><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="hydraulics.css"><link rel="stylesheet" href="hydraulics-overrides.css"></head>
+<body class="hydraulic-page"><header class="nav"><a class="logo" href="index.html#home">YS<span>.</span></a><nav><a href="index.html#about">About</a><a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav><a class="nav-cta" href="#results">Explore results</a></header><main>
+<section class="hydro-hero"><div class="hydro-grid"></div><div class="hero-inner"><a class="back" href="index.html#projects">← Portfolio</a><p class="eyebrow">CVL 502 · HYDRAULIC ENGINEERING · WINTER 2026</p><h1>From <span>flow</span><br>to flood.</h1><p class="hero-summary">A hydraulic engineering lab series connecting physical testing, pipe-network analysis, open-channel behaviour, and steady-flow flood modelling.</p></div><div class="hero-diagram"><p>ENGINEERING WORKFLOW</p><div class="flow-line"><i></i><i></i><i></i><i></i><i></i></div><div class="flow-labels"><span>measure</span><span>calculate</span><span>validate</span><span>model</span></div></div></section>
+<section class="project-overview"><p class="eyebrow">PROJECT OVERVIEW</p><p class="overview-copy">The work moves from controlled bench-scale measurements to digital decision-making tools. Each part tests the assumptions behind the next: conservation of energy, friction and local losses, flow control in channels, then system-level modelling using EPANET and HEC-RAS.</p><div class="part-nav"><a href="#part-1"><b>01</b> Pressurized flow</a><a href="#part-2"><b>02</b> EPANET network</a><a href="#part-3"><b>03</b> Open channels</a><a href="#part-4"><b>04</b> HEC-RAS flood model</a></div></section>
+<section id="part-1" class="case-part dark-part"><div class="part-heading"><span>PART 01</span><h2>Pressurized-flow<br>fundamentals</h2><p>Labs 1-3 established how energy is distributed and dissipated in closed conduits: first through a varying-area section, then along a straight pipe, and finally through fittings.</p></div><div class="diagram-panel bernoulli-diagram"><div class="head-label h-one">H1</div><div class="head-label h-two">H2</div><div class="head-label h-three">H3</div><div class="head-label h-four">H4</div><div class="head-label h-five">H5</div><div class="pipe-shape"></div><div class="energy-line"></div><div class="water-line"></div><p>Static head falls through the contraction while velocity head rises.</p></div><div class="three-cards"><article><p class="tag">LAB 01 · BERNOULLI</p><h3>Energy distribution</h3><p>Timed volumetric flow and six manometer / probe readings were used to compare static head, velocity head, and total head across a horizontal converging-diverging duct.</p><div class="micro-result"><b>1.75 × 10<sup>-4</sup></b><span>m³/s highest measured discharge</span></div></article><article><p class="tag">LAB 02 · PIPE FRICTION</p><h3>Distributed loss</h3><p>Pressure drop and discharge data were converted to Reynolds number and Darcy friction factor across low- and high-flow regimes, making the laminar/turbulent transition visible.</p><img src="assets/friction-factor-plot.png" alt="Experimental friction-factor plot from the pipe-friction lab"></article><article><p class="tag">LAB 03 · BENDS &amp; FITTINGS</p><h3>Local loss</h3><p>Mitre, elbow, short-bend, and long-bend configurations were compared using head-loss versus dynamic-head relationships and loss coefficients.</p><div class="bend-sketch"><i></i><i></i><i></i><i></i></div></article></div><div class="insight-bar"><b>Design takeaway</b><p>Pressure is not a standalone quantity: it is one component of the total energy budget. Pipe roughness, velocity, diameter, and fitting geometry all determine how much usable head remains downstream.</p></div></section>
+<section id="part-2" class="case-part epanet-part"><div class="part-heading"><span>PART 02</span><h2>Pipe-network<br>modelling in EPANET</h2><p>Lab 4 scaled the loss mechanisms measured in the laboratory to a connected water-distribution system. The model was used as a sensitivity-testing environment, not just a calculator.</p></div><div class="network-layout"><div class="network-diagram"><span class="source">RESERVOIR</span><svg viewBox="0 0 700 380" role="img" aria-label="Pipe network with nodes A through H and highlighted node F"><g class="pipes"><path d="M78 193 L190 92 L330 135 L473 78 L620 126"/><path d="M78 193 L190 292 L330 250 L470 308 L620 250"/><path d="M190 92 L190 292 M330 135 L330 250 M473 78 L470 308 M620 126 L620 250 M330 135 L470 308 M330 250 L473 78"/></g><g class="nodes"><circle cx="78" cy="193" r="13"/><circle cx="190" cy="92" r="13"/><circle cx="190" cy="292" r="13"/><circle cx="330" cy="135" r="13"/><circle cx="330" cy="250" r="13"/><circle cx="473" cy="78" r="13"/><circle cx="470" cy="308" r="13"/><circle class="focus-node" cx="620" cy="126" r="17"/><circle cx="620" cy="250" r="13"/></g><g class="letters"><text x="64" y="225">A</text><text x="176" y="72">B</text><text x="176" y="327">C</text><text x="316" y="116">D</text><text x="316" y="282">E</text><text x="458" y="58">G</text><text x="455" y="342">H</text><text x="613" y="108">F</text><text x="610" y="281">J</text></g></svg><div class="network-key"><i></i> baseline pipe <i class="focus"></i> node F assessed in scenarios</div></div><div class="network-copy"><p class="eyebrow">MODEL INPUTS</p><ul><li>Junction and reservoir elevations</li><li>Pipe length, diameter, and roughness</li><li>Node demands and boundary conditions</li><li>Consistent hydraulic units</li></ul><p>Each scenario isolates one change, runs the hydraulic solver, and compares the new flow / pressure condition with the baseline.</p></div></div><div id="results" class="scenario-grid"><article><p class="tag">SCENARIO 01 · ROUGHNESS</p><h3>Lower friction in EF</h3><div class="delta"><span>Flow</span><b>80.39 → 85.00 L/s</b><span>Pressure at F</span><b>28.87 → 30.73</b></div><p>Reducing the assumed friction factor from 0.021 to 0.014 increased flow and available pressure.</p></article><article><p class="tag">SCENARIO 02 · DIAMETER</p><h3>Double pipe HF diameter</h3><div class="delta"><span>Flow in HF</span><b>86.62 → 87.87 L/s</b><span>Pressure at F</span><b>35.12 → 35.55 m</b></div><p>Head loss and velocity fell strongly; the network redistributed flow across parallel routes.</p></article><article><p class="tag">SCENARIO 03 · DEMAND</p><h3>Add 50 L/s at F</h3><div class="delta"><span>Pressure head at F</span><b>16.27 → -1.67 m</b><span>Interpretation</span><b>Service shortfall</b></div><p>A higher local demand drove a severe pressure-head reduction - a useful serviceability warning.</p></article><article><p class="tag">SCENARIO 04 · REDUNDANCY</p><h3>Add a new supply path</h3><div class="delta"><span>Pressure head at F</span><b>8.33 → 16.20 m</b><span>Flow in EF</span><b>115.38 → 114.46 L/s</b></div><p>The extra connection reduced system resistance, substantially improving pressure at F.</p></article></div></section>
+<section id="part-3" class="case-part open-part"><div class="part-heading"><span>PART 03</span><h2>Controlling open-channel flow</h2><p>Labs 5 and 6 explored discharge measurement and flow regime changes in an open channel. Together, they connect geometry, depth, discharge, and energy.</p></div><div class="channel-grid"><article class="weir-card"><div class="weir-sketch"><div class="water-surface"></div><div class="notch"></div><div class="falling-water"></div></div><p class="tag">LAB 05 · WEIRS</p><h3>Calibrating discharge</h3><p>Rectangular and V-notch weirs were tested over multiple heads. Measured discharge was compared with weir equations to establish experimental coefficients.</p><div class="two-metrics"><div><b>0.257</b><span>average C<sub>d</sub>, rectangular</span></div><div><b>0.504</b><span>average C<sub>d</sub>, V-notch</span></div></div></article><article class="sluice-card"><img src="assets/sluice-specific-energy.png" alt="Specific-energy curve from the sluice-gate lab"><p class="tag">LAB 06 · SLUICE GATE</p><h3>Specific energy and alternate depths</h3><p>Ten gate positions defined a specific-energy curve, separating subcritical and supercritical behaviour while identifying the critical condition.</p><div class="result-compare"><span>Critical depth</span><b>4.21 cm theory</b><b>4.40 cm observed</b><small>4.317% difference</small></div></article></div><div class="energy-equation"><span>E = y +</span><strong>q<sup>2</sup><i>2gy<sup>2</sup></i></strong><p>At a fixed unit discharge, the minimum of the curve marks critical depth; depths on either side can carry the same specific energy.</p></div></section>
+<section id="part-4" class="case-part hec-part"><div class="part-heading"><span>PART 04</span><h2>Flood-profile modelling<br>in HEC-RAS</h2><p>Lab 7 moved from physical apparatus to a steady-flow river model. Cross-section geometry, reach lengths, roughness zones, and flood-event flows were interpreted through HEC-RAS outputs.</p></div><div class="hec-layout"><div class="hec-copy"><p class="eyebrow">FALL RIVER · STATION 10</p><h3>Water-surface response by event</h3><div class="event-bars"><div><span>10-year</span><b style="width:58%">76.44 ft</b><em>Fr 0.25</em></div><div><span>50-year</span><b style="width:76%">81.61 ft</b><em>Fr 0.25</em></div><div><span>100-year</span><b style="width:93%">86.15 ft</b><em>Fr 0.22</em></div></div><p>All simulated events remained <strong>subcritical</strong> (Froude number below 1), with water-surface elevation increasing as flood magnitude rose.</p><div class="reach-note"><b>Reach geometry</b><span>Upper reach: 0.20 mi / 1,056 ft</span><span>River-station spacing: 0.10 mi / 528 ft</span></div></div><figure><img src="assets/hec-ras-xyz-plot.png" alt="HEC-RAS XYZ plot showing 10, 50 and 100 year water surface planes"><figcaption>HEC-RAS XYZ plot: water-surface planes expand across the lower reach as the event grows.</figcaption></figure></div><div class="hec-bottom"><article><p class="tag">ROUGHNESS ZONING</p><h3>LOB · channel · ROB</h3><p>Different Manning’s n values model the smoother main channel separately from rougher vegetated or irregular overbanks, improving hydraulic realism.</p></article><article><p class="tag">VELOCITY &amp; RISK · RS 9.6</p><h3>Higher event, higher erosive potential</h3><div class="velocity"><span>10-year</span><b>2.42 ft/s</b><span>100-year</span><b>4.81 ft/s</b></div><p>The near-doubling in velocity indicates a higher likelihood of erosive shear during the 100-year event.</p></article><article><p class="tag">RATING-CURVE INTERPRETATION</p><h3>Why the curve flattens</h3><p>The lower flow is constrained in a narrow trapezoidal channel. Once flow reaches wider overbanks, added discharge spreads laterally, so stage rises less rapidly.</p></article></div></section>
+<section class="reflection"><p class="eyebrow">ENGINEERING DEVELOPMENT</p><h2>A continuous investigation,<br><span>not seven isolated labs.</span></h2><p>This body of work developed my ability to collect experimental data, translate it into governing hydraulic quantities, assess uncertainty, and use professional software to test system-level design decisions.</p><div class="software-row"><span>EPANET</span><span>HEC-RAS</span><span>Excel</span><span>Hydraulic bench testing</span></div></section></main><footer><span>© 2026 Yousif Shasha</span><span>CVL 502 · Hydraulic Engineering</span></footer><script src="script.js"></script></body></html>
+
+.energy-equation strong{display:inline-block;text-align:center;line-height:1.12;border-bottom:0;color:#fff;padding:0 8px}
+.energy-equation strong i{display:block;font-style:normal;border-left:0;border-top:2px solid var(--aqua);padding:5px 8px 0;margin-top:2px}
+.energy-equation strong sup{font-size:.58em;vertical-align:super}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yousif Shasha | Civil Engineering Portfolio</title>
+  <meta name="description" content="Yousif Shasha — Civil Engineering student focused on structural engineering, analysis, design, and construction.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">YS<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Let's Connect</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="grid-bg"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">STRUCTURAL ENGINEERING</p>
+        <h1>Yousif<br><span>Shasha</span></h1>
+        <p class="hero-sub">Civil Engineering Student<br>Interested in Structural Design, Analysis & Construction.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore Projects</a>
+          <a class="button secondary" href="#resume">View Resume</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="blueprint">
+          <div class="beam beam1"></div><div class="beam beam2"></div>
+          <div class="column c1"></div><div class="column c2"></div><div class="column c3"></div><div class="column c4"></div>
+          <div class="dimension d1">6000</div><div class="dimension d2">4500</div>
+          <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div><div class="node n4"></div>
+        </div>
+        <div class="card-label"><span>01</span> STRUCTURAL THINKING</div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-head"><span>01</span><h2>About Me</h2></div>
+      <div class="about-grid">
+        <figure class="about-photo"><img src="assets/yousif-portrait.jpg" alt="Portrait of Yousif Shasha"></figure>
+        <div><p class="lead">I’m a Civil Engineering student at Toronto Metropolitan University with a growing focus on structural engineering.</p></div>
+        <div><p>Through engineering labs and design projects, I’ve developed hands-on experience with AutoCAD, Revit, SAP2000, and Microsoft Excel, while building my skills in structural analysis and engineering design.
+        <p class="muted">Toronto, Ontario · TMU · Civil Engineering</p></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-head"><span>02</span><h2>Featured Projects</h2></div>
+      <p class="section-intro">A collection of academic and personal projects demonstrating my technical skills, engineering knowledge, and hands-on experience. </p>
+      <div class="project-grid">
+        <article class="project featured">
+          <div class="project-visual structural structural-thumb"><span>01</span><img src="assets/structural-frame-blueprint.png" alt="Steel building frame transitioning from blueprint linework into a three-dimensional structural model"></div>
+          <div class="project-body"><p class="tag">STRUCTURAL MECHANICS · FALL 2025 + WINTER 2026</p><h3>Structural Mechanics: Drawing to Behaviour</h3><p>Six experiments investigating stress concentration, compression, truss forces, beam deflection, flexural stress, and torsion through AutoCAD drawings, hand calculations, Excel analysis, and physical testing.</p><a href="structural.html" class="project-link">Project details</a></div>
+        </article>
+        <article class="project">
+          <div class="project-visual geotech geotech-thumb"><span>02</span><img src="assets/geotechnical-subsoil-illustration.png" alt="Geotechnical illustration of a drill rig, foundation, borehole, and soil layers"></div>
+          <div class="project-body"><p class="tag">GEOTECHNICAL ENGINEERING · WINTER 2026</p><h3>Geotechnical Engineering</h3><p>Soil classification, subsurface investigation, bearing capacity, settlement, and foundation-design considerations.</p><a href="geotech.html" class="project-link">View project</a></div>
+        </article>
+        <article class="project">
+          <div class="project-visual hydraulics hydraulics-thumb"><span>03</span><img src="assets/hydraulic-flow-illustration.png" alt="Minimal illustration of water flowing through a dam and pipe"></div>
+          <div class="project-body"><p class="tag">HYDRAULIC ENGINEERING · WINTER 2026</p><h3>Hydraulic Engineering: Flow to Flood</h3><p>Seven connected laboratories in physical flow testing, EPANET pipe networks, open-channel hydraulics, and HEC-RAS flood modelling.</p><a href="hydraulics.html" class="project-link">Project details</a></div>
+        </article>
+        <article class="project">
+          <div class="project-visual survey-map"><span>04</span><img src="assets/survey-map-v2.png" alt="Survey map showing a total station and points A1, A2, and A5"></div>
+          <div class="project-body"><p class="tag">SURVEYING · FALL 2025</p><h3>Surveying & Geospatial Field Methods</h3><p>Leveling, total-station measurements, trigonometric elevation work, error analysis, and closed-traverse adjustment.</p><a href="surveying.html" class="project-link">View project</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-head"><span>03</span><h2>Technical Skills</h2></div>
+      <div class="skill-grid">
+        <div><p class="tag">ENGINEERING</p><h3>Structural Analysis<br>Mechanics of Materials<br>Surveying<br>Hydraulic Engineering<br>Fluid Mechanics<br>Engineering Data Analysis</h3></div>
+        <div><p class="tag">SOFTWARE</p><h3>AutoCAD<br>SAP2000<br>EPANET<br>HEC-RAS<br>Microsoft Excel</h3></div>
+        <div><p class="tag">FIELD</p><h3>Total Station<br>Automatic Level<br>GPS Surveying Equipment<br>Construction Measurements</h3></div>
+      </div>
+    </section>
+
+    <section id="resume" class="section resume">
+      <div class="resume-box">
+        <div><p class="eyebrow">CO-OP READY</p><h2>Want the full picture?</h2><p>Add your latest one-page resume here. Replace the placeholder file with your PDF and update the button below.</p><a class="button primary" href="resume.pdf" download>Download Resume</a></div>
+        <div class="resume-mark">CV<br><span>01</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head"><span>04</span><h2>Let's Connect</h2></div>
+      <div class="contact-grid">
+        <div><h2>Building toward my first<br><span>engineering co-op.</span></h2></div>
+        <div><p>Interested in structural engineering, design, construction, and practical engineering problem-solving.</p><a class="contact-link" href="mailto:yousif.shasha0@gmail.com">yousif.shasha0@gmail.com</a><a class="contact-link" href="https://www.linkedin.com/in/yousif-shasha-177412375/" target="_blank">LinkedIn</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Yousif Shasha</span><span>Civil Engineering · Structural Focus</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+# Yousif Shasha — Engineering Portfolio
+
+This is a simple editable portfolio website built with HTML, CSS, and JavaScript.
+
+## How to use it
+1. Open `index.html` in a browser to preview the site.
+2. Edit the text in `index.html`.
+3. Edit colors, fonts, spacing, and layout in `style.css`.
+4. Edit animations/interactions in `script.js`.
+5. Put project images inside the `images` folder.
+6. Add your resume as `resume.pdf` in the main folder.
+
+## Publishing
+You can publish this for free with GitHub Pages, or upload it to another web host.
+
+## Important
+The project descriptions are placeholders based on the portfolio direction we discussed. Replace them with your real project details, measurements, results, photos, and calculations. Describe independent work as independent/personal projects and course work as academic projects.
+
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+  link.addEventListener('click',e=>{
+    const id=link.getAttribute('href');
+    if(id && id!="#" && document.querySelector(id)){
+      e.preventDefault();
+      document.querySelector(id).scrollIntoView({behavior:'smooth'});
+    }
+  });
+});
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{if(entry.isIntersecting) entry.target.classList.add('show')});
+},{threshold:.12});
+document.querySelectorAll('.project,.skill-grid>div,.about-grid>div,.resume-box').forEach(el=>{
+  el.classList.add('reveal'); observer.observe(el);
+});
+
+:root{--s-ink:#15202b;--s-muted:#62707d;--s-blue:#1687d4;--s-cyan:#70ddff;--s-navy:#071724;--s-paper:#f3f6f8;--s-card:#fff;--s-line:#d8e0e6}
+.structural-page{background:var(--s-paper);color:var(--s-ink)}.structural-page .nav{position:sticky;background:rgba(7,23,36,.96);color:#fff;border-color:#274052}.structural-page .nav a{color:inherit}.structural-page .logo span{color:var(--s-cyan)}.structural-page .nav-cta{border-color:#6a8497}
+.s-hero{min-height:690px;padding:76px max(7vw,42px) 90px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr);gap:7vw;align-items:center;background:var(--s-navy);color:#eef7fb}.back{display:inline-block;margin-bottom:38px;color:#9eeaff;font-size:13px}.s-hero h1{max-width:720px;margin:14px 0 30px;font-size:clamp(64px,7vw,108px);line-height:.88;letter-spacing:-.065em}.s-hero h1 span{color:var(--s-cyan)}.s-hero .lead{max-width:690px;margin:0;color:#b7c7d3;font-size:17px;line-height:1.75;letter-spacing:0}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}.chips span,.synthesis span{padding:8px 11px;border:1px solid #355268;font:600 10px/1.2 'DM Mono',monospace;letter-spacing:.07em;text-transform:uppercase}
+.hero-cad{padding:20px;border:1px solid #28445a;background:#06121d;box-shadow:24px 24px 0 rgba(35,139,194,.12)}.hero-cad svg{display:block;width:100%}.hero-cad small,.cad-card figcaption{display:block;margin-top:14px;color:#84e4ff;font:500 10px/1.5 'DM Mono',monospace;letter-spacing:.1em}.gridlines{stroke:#102b3d;stroke-width:1}.cad{fill:none;stroke:#5edfff;stroke-width:3}.cad text{fill:#9ceaff;stroke:none;font:14px 'DM Mono',monospace}
+.workflow{padding:82px 7vw;background:#fff}.workflow>div{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1400px;margin:28px auto 0}.workflow article{min-height:190px;padding:28px;border:1px solid var(--s-line);background:#fbfcfd}.workflow article b,.part-index b{color:var(--s-blue);font:600 24px 'DM Mono',monospace}.workflow h3{margin:18px 0 10px;font-size:18px}.workflow article p{margin:0;color:var(--s-muted);font-size:14px;line-height:1.65}
+.part-index{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;padding:1px 7vw;background:#183044}.part-index a{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center;min-height:76px;padding:16px 20px;background:#0b2030;color:#fff}.part-index a:hover{background:#123249}.part-index span{font-size:12px;line-height:1.4}
+.structural-page .lab{display:block;padding:105px 7vw;border:0;border-bottom:1px solid var(--s-line);background:var(--s-paper);color:var(--s-ink)}.structural-page .lab:nth-of-type(even){background:#fff}.lab header{display:grid;grid-template-columns:150px minmax(0,1fr) 270px;gap:34px;align-items:end;max-width:1400px;margin:0 auto 48px}.lab header>p{margin:0;color:var(--s-blue);font:600 11px 'DM Mono',monospace;letter-spacing:.1em}.lab h2{max-width:800px;margin:0;font-size:clamp(42px,5vw,68px);line-height:.98;letter-spacing:-.045em}.lab header>span{color:var(--s-muted);font-size:14px;line-height:1.6}
+.lab-grid{display:grid;grid-template-columns:1fr;gap:22px;max-width:1400px;margin:auto}.cad-card{min-height:440px;margin:0;padding:26px 30px 20px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;border:1px solid #24465f;background:#071a29;border-radius:2px}.cad-card svg{display:block;width:min(100%,1050px);max-height:480px;margin:auto}.shape{fill:none;stroke:#e7f4fb;stroke-width:3;vector-effect:non-scaling-stroke}.shape .center,.center{stroke:#ffd36e;stroke-dasharray:10 8}.shape .gauge,.gauge{stroke:#ff6380;stroke-width:7}.shape .metal,.metal{fill:#91e7ff;stroke:#91e7ff}.dim{fill:none;stroke:#42cfff;stroke-width:1.5}.dim text{fill:#9be8ff;stroke:none;font:14px 'DM Mono',monospace}.truss{stroke-width:6}
+.wide-cad .dim text{paint-order:stroke;stroke:#071a29;stroke-width:5px;stroke-linejoin:round}
+.calc-stack{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:22px}.calc-stack article{min-width:0;padding:30px;border:1px solid var(--s-line);background:var(--s-card);color:var(--s-ink);box-shadow:0 8px 25px rgba(20,44,61,.04)}.calc-stack label{display:block;margin-bottom:19px;color:var(--s-blue);font:600 10px 'DM Mono',monospace;letter-spacing:.12em}.hand code{display:block;white-space:normal;color:#334552;font:16px/1.75 'DM Mono',monospace}.hand b{color:#087bbd}.sheet{overflow-x:auto}.sheet table{width:100%;min-width:430px;border-collapse:collapse;font-size:13px}.sheet th,.sheet td{padding:11px 10px;border-bottom:1px solid var(--s-line);text-align:right;white-space:nowrap}.sheet th:first-child,.sheet td:first-child{text-align:left}.sheet th{background:#eaf6fc;color:#1c5474;font-weight:700}.sheet small{display:block;margin-top:15px;color:var(--s-muted);font-size:12px;line-height:1.55}
+.finding{display:grid;grid-template-columns:170px 1fr;gap:28px;max-width:1400px;margin:22px auto 0;padding:23px 26px;border-left:3px solid var(--s-blue);background:#e9f4f9}.finding b{font-size:14px}.finding p{margin:0;color:#435461;font-size:14px;line-height:1.7}
+.synthesis{padding:115px 10vw;text-align:center;background:#0a2132;color:#eff8fc}.synthesis h2{margin:18px auto 24px;font-size:clamp(48px,6vw,84px);line-height:1;letter-spacing:-.055em}.synthesis>p:not(.eyebrow){max-width:880px;margin:0 auto 38px;color:#b8ccd8;font-size:17px;line-height:1.75}.synthesis>div{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}.structural-page footer{background:#06131e;color:#9eb1bf;border-color:#273b4a}.structural-page .eyebrow{font:600 10px 'DM Mono',monospace;letter-spacing:.14em}
+@media(max-width:1050px){.s-hero{grid-template-columns:1fr}.hero-cad{max-width:760px}.workflow>div{grid-template-columns:1fr 1fr}.lab header{grid-template-columns:1fr;gap:14px}.lab header>span{max-width:600px}}
+@media(max-width:760px){.s-hero,.structural-page .lab,.workflow{padding-left:24px;padding-right:24px}.s-hero{padding-top:54px}.s-hero h1{font-size:clamp(58px,18vw,82px)}.part-index{grid-template-columns:1fr 1fr;padding-left:0;padding-right:0}.calc-stack{grid-template-columns:1fr}.cad-card{min-height:320px;padding:14px}.finding{grid-template-columns:1fr;gap:8px}}
+@media(max-width:500px){.workflow>div,.part-index{grid-template-columns:1fr}.workflow article{min-height:0}.calc-stack article{padding:22px}.sheet table{min-width:390px}}
+
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Structural Behaviour Laboratory | Yousif Shasha</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="structural.css"></head><body class="structural-page"><header class="nav"><a class="logo" href="index.html#home">YS<span>.</span></a><nav><a href="index.html#about">About</a><a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav><a class="nav-cta" href="#part-1">Explore project</a></header><main>
+<section class="s-hero"><div><a class="back" href="index.html#projects">← Portfolio</a><p class="eyebrow">PROJECT 04 · CVL 320 + CVL 420 · STRUCTURAL MECHANICS</p><h1>Draw it.<br><span>Load it.</span><br>Explain it.</h1><p class="lead">This portfolio presents six structural mechanics experiments completed in CVL 320 and CVL 420. The projects investigated stress concentration, compression, truss-member forces, beam deflection, flexural stress, and torsion using aluminum, timber, and composite specimens. Each specimen was documented with dimensioned AutoCAD drawings, analyzed through hand calculations, processed in Excel, and evaluated by comparing theoretical results with strain-gauge, dial-gauge, load-cell, and data-acquisition measurements.</p><div class="chips"><span>06 experiments</span><span>Aluminum + timber</span><span>AutoCAD · hand calculations · Excel · testing</span></div></div><div class="hero-cad"><svg viewBox="0 0 660 430" role="img" aria-label="AutoCAD structural laboratory drawing"><g class="gridlines"><path d="M0 50H660M0 100H660M0 150H660M0 200H660M0 250H660M0 300H660M0 350H660M0 400H660M50 0V430M100 0V430M150 0V430M200 0V430M250 0V430M300 0V430M350 0V430M400 0V430M450 0V430M500 0V430M550 0V430M600 0V430"/></g><g class="cad"><path d="M70 315H590M70 315L170 155L270 315L370 155L470 315L590 155M170 155H370M370 155H590"/><circle cx="270" cy="315" r="6"/><path d="M270 325V392M250 365L270 392L290 365"/><text x="282" y="382">P</text><path d="M70 335V370M590 335V370M70 357H590"/><text x="290" y="353">1040 mm</text></g></svg><small>MODEL SPACE / STRUCTURAL LAB SERIES / NTS</small></div></section>
+<section class="workflow"><p class="eyebrow">PROJECT WORKFLOW</p><div><article><b>01</b><h3>AutoCAD definition</h3><p>Plan, elevation, section, dimensions, materials, supports, loads, and gauge locations.</p></article><article><b>02</b><h3>Hand model</h3><p>Free-body diagram, governing equation, substituted values, units, and engineering check.</p></article><article><b>03</b><h3>Excel model</h3><p>Raw measurements, formula-driven tables, comparisons, percent differences, and plots.</p></article><article><b>04</b><h3>Laboratory evidence</h3><p>Strain gauges, dial gauges, load cells, and data acquisition validate the idealized model.</p></article></div></section>
+<section class="part-index"><a href="#part-1"><b>01</b><span>320 · Stress concentration</span></a><a href="#part-2"><b>02</b><span>320 · Hollow cylinder</span></a><a href="#part-3"><b>03</b><span>320 · Aluminum truss</span></a><a href="#part-4"><b>04</b><span>420 · Beam deflection</span></a><a href="#part-5"><b>05</b><span>420 · Flexural stress</span></a><a href="#part-6"><b>06</b><span>420 · Torsion</span></a></section>
+
+<section id="part-1" class="lab light"><header><p>PART 01 · CVL 320</p><h2>Stress concentration<br>in a stepped aluminum plate</h2><span>Axial tension · 10 gauges · E = 70,000 MPa</span></header><div class="lab-grid"><figure class="cad-card"><svg viewBox="0 0 700 390" role="img" aria-label="Dimensioned stepped plate drawing"><defs><marker id="a1" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M7 0L0 3.5L7 7"/></marker></defs><g class="shape"><path d="M265 40H435V125Q435 150 405 165V330H295V165Q265 150 265 125Z"/><path class="center" d="M350 20V355"/><path class="gauge" d="M320 190V225M350 190V225M380 190V225M320 70V105M350 70V105M380 70V105"/><path d="M350 330V375" marker-end="url(#a1)"/></g><g class="dim"><path d="M265 25H435" marker-start="url(#a1)" marker-end="url(#a1)"/><text x="315" y="18">D = 71 mm</text><path d="M295 345H405" marker-start="url(#a1)" marker-end="url(#a1)"/><text x="205" y="350">d = 40 mm</text><text x="450" y="95">Aluminum plate</text><text x="450" y="118">Gauge lines 7-8-9</text><text x="450" y="205">Gauge line 4-5-6</text><text x="370" y="382">TENSION</text></g></svg><figcaption>AUTOCAD · FRONT ELEVATION</figcaption></figure><div class="calc-stack"><article class="hand"><label>HAND CHECK</label><code>σ<sub>avg</sub> = F / A<br>K<sub>t,theory</sub> = 1.50<br>At F = 490 N:<br>σ<sub>avg</sub> = 5.75 MPa<br>σ<sub>max,theory</sub> = 1.50(5.75)<br><b>= 8.63 MPa</b></code></article><article class="sheet"><label>EXCEL RESULT SNAPSHOT</label><table><tr><th>Load</th><th>Avg. stress (MPa)</th><th>Max stress (MPa)</th><th>K<sub>exp</sub></th></tr><tr><td>196 N</td><td>2.30</td><td>1.54</td><td>0.67</td></tr><tr><td>392 N</td><td>4.60</td><td>3.50</td><td>0.76</td></tr><tr><td>490 N</td><td>5.75</td><td>4.62</td><td>0.80</td></tr></table><small>Formula cells compare measured maximum with F/A.</small></article></div></div><div class="finding"><b>Reading the result</b><p>Stress rose approximately linearly with load, but the measured peaks remained below the theoretical notch prediction. Gauge line 4-5-6 was the more critical measured section.</p></div></section>
+
+<section id="part-2" class="lab dark"><header><p>PART 02 · CVL 320</p><h2>Compression of a<br>thin-walled cylinder</h2><span>Aluminum tube · eight gauges · hydraulic loading</span></header><div class="lab-grid"><figure class="cad-card"><svg viewBox="0 0 700 390"><defs><marker id="a2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M7 0L0 3.5L7 7"/></marker></defs><g class="shape"><rect x="110" y="55" width="180" height="265"/><path class="center" d="M200 30V345"/><circle cx="485" cy="185" r="95"/><circle cx="485" cy="185" r="89"/><path class="gauge" d="M155 105V155M200 105V155M245 105V155"/><path d="M200 10V52" marker-end="url(#a2)"/></g><g class="dim"><path d="M75 55V320" marker-start="url(#a2)" marker-end="url(#a2)"/><text x="25" y="195" transform="rotate(-90 25 195)">405 mm</text><path d="M390 300H580" marker-start="url(#a2)" marker-end="url(#a2)"/><text x="435" y="325">Ø100 mm OD</text><path d="M485 185L574 185" marker-end="url(#a2)"/><text x="455" y="165">t = 3.0 mm</text><text x="80" y="22">COMPRESSION</text><text x="410" y="55">SECTION A-A</text></g></svg><figcaption>AUTOCAD · ELEVATION + SECTION · 100 OD × 3 wall × 405 long</figcaption></figure><div class="calc-stack"><article class="hand"><label>HAND CHECK · 300 kg</label><code>D<sub>i</sub> = 100 - 2(3) = 94 mm<br>A = π/4(D<sub>o</sub>² - D<sub>i</sub>²)<br><b>A = 914.20 mm²</b><br>P = 300(9.81) = 2,943 N<br>σ<sub>theory</sub> = P/A<br><b>= 3.219 MPa compression</b></code></article><article class="sheet"><label>EXCEL COMPARISON</label><table><tr><th>Load</th><th>σ<sub>theory</sub> (MPa)</th><th>σ<sub>measured avg.</sub> (MPa)</th><th>|Δ|</th></tr><tr><td>300 kg</td><td>3.22</td><td>4.73</td><td>46.9%</td></tr><tr><td>600 kg</td><td>6.44</td><td>8.63</td><td>34.0%</td></tr><tr><td>900 kg</td><td>9.66</td><td>12.40</td><td>28.4%</td></tr><tr><td>1200 kg</td><td>12.88</td><td>17.07</td><td>32.6%</td></tr></table></article></div></div><div class="finding"><b>Reading the result</b><p>Gauge 7 consistently recorded the largest compression. The nonuniform field points to eccentric loading, imperfect end contact, wall variation, and local bending that the uniform P/A model cannot capture.</p></div></section>
+
+<section id="part-3" class="lab light"><header><p>PART 03 · CVL 320</p><h2>Force paths in an<br>aluminum model truss</h2><span>Axial member force · tension/compression · method of joints</span></header><div class="lab-grid"><figure class="cad-card wide-cad"><svg viewBox="0 0 800 390"><defs><marker id="a3" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M7 0L0 3.5L7 7"/></marker></defs><g class="shape truss"><path d="M70 300H730M70 300L200 105L330 300L460 105L590 300L730 105M200 105H460H730M200 105V300M460 105V300M590 300V105"/><circle cx="330" cy="300" r="7"/><path d="M330 310V370" marker-end="url(#a3)"/></g><g class="dim"><path d="M70 335H200" marker-start="url(#a3)" marker-end="url(#a3)"/><path d="M200 335H330" marker-start="url(#a3)" marker-end="url(#a3)"/><text x="110" y="358">260</text><text x="240" y="358">260</text><path d="M760 105V300" marker-start="url(#a3)" marker-end="url(#a3)"/><text x="770" y="210" transform="rotate(90 770 210)">157 mm</text><text x="120" y="185" transform="rotate(-56 120 185)">304 mm diagonal</text><text x="345" y="385">LOAD</text><text x="510" y="45">Aluminum flat members · t = 2.13 mm</text><text x="125" y="287">12</text><text x="255" y="287">2</text><text x="315" y="94">8</text><text x="125" y="210">4</text><text x="255" y="210">6</text><text x="184" y="210">10</text><text x="445" y="210">7</text></g></svg><figcaption>AUTOCAD · TRUSS ELEVATION</figcaption></figure><div class="calc-stack"><article class="hand"><label>HAND CHECK · MEMBER 2</label><code>A = b t = 12.5(2.13)<br><b>A = 26.625 mm²</b><br>At 908 g: ε = 6 με<br>F<sub>exp</sub> = EεA<br>= 70,000(6×10⁻⁶)(26.625)<br><b>= 11.18 N tension</b></code></article><article class="sheet"><label>EXCEL MEMBER SUMMARY</label><table><tr><th>Member</th><th>Sign</th><th>E avg. (MPa)</th></tr><tr><td>2 / 12</td><td>Tension</td><td>54,810 / 58,016</td></tr><tr><td>4 / 6</td><td>Compression</td><td>41,063 / 95,775</td></tr><tr><td>7</td><td>Zero-force</td><td>0</td></tr><tr><td>8 / 10</td><td>Mixed</td><td>371,998 / 199,264</td></tr></table><small>Large scatter identifies the limits of very small strain readings and assumed member width.</small></article></div></div><div class="finding"><b>Reading the result</b><p>The signs successfully map the truss load path: positive strain marks tension and negative strain compression. Near-zero readings are especially sensitive to gauge resolution, joint friction, and construction tolerances.</p></div></section>
+
+<section id="part-4" class="lab dark"><header><p>PART 04 · CVL 420</p><h2>Deflection of timber<br>and composite beams</h2><span>Four-point bending · transformed section · dial gauge</span></header><div class="lab-grid"><figure class="cad-card"><svg viewBox="0 0 760 430"><defs><marker id="a4" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M7 0L0 3.5L7 7"/></marker></defs><g class="shape"><rect x="65" y="55" width="630" height="38"/><circle cx="65" cy="112" r="16"/><circle cx="695" cy="112" r="16"/><path d="M275 10V52M485 10V52" marker-end="url(#a4)"/><rect x="105" y="225" width="85" height="150"/><rect x="105" y="218" width="85" height="7" class="metal"/><rect x="430" y="240" width="85" height="140"/><path d="M430 275H515M430 310H515M430 345H515"/></g><g class="dim"><path d="M65 150H695" marker-start="url(#a4)" marker-end="url(#a4)"/><text x="350" y="172">900 mm</text><text x="248" y="30">P/2</text><text x="458" y="30">P/2</text><text x="97" y="205">A · composite section</text><text x="101" y="402">35 × 88 timber + 2.3 Al</text><text x="410" y="225">B · glued timber</text><text x="425" y="402">35 × 70 (4 × 17 mm)</text></g></svg><figcaption>AUTOCAD · BEAM ELEVATION + TWO TEST SECTIONS</figcaption></figure><div class="calc-stack"><article class="hand"><label>HAND DEFLECTION MODEL</label><code>v = Pa(3L² - 4a²) / 24EI<br>L = 900 mm · a = 300 mm<br>Composite I = 3.083×10⁶ mm⁴<br>Glued I = 0.986×10⁶ mm⁴<br>At 80 kg:<br><b>v<sub>theory</sub> = 0.732 / 2.288 mm</b></code></article><article class="sheet"><label>EXCEL LOAD-DEFLECTION</label><table><tr><th>Load</th><th>Composite deflection</th><th>Glued deflection</th></tr><tr><td>0 kg</td><td>-0.019</td><td>-0.016</td></tr><tr><td>20 kg</td><td>0.111</td><td>0.215</td></tr><tr><td>40 kg</td><td>0.239</td><td>0.415</td></tr><tr><td>80 kg</td><td>0.507</td><td>0.825</td></tr></table><small>Measured central deflection, mm. The reinforced section remained stiffer across the loading range.</small></article></div></div><div class="finding"><b>Reading the result</b><p>The aluminum-reinforced timber beam deflected 38.5% less than the four-piece glued beam at 80 kg. The nearly linear trends support elastic beam theory; unloading offsets reveal small zeroing, seating, or hysteresis effects.</p></div></section>
+
+<section id="part-5" class="lab light"><header><p>PART 05 · CVL 420</p><h2>Flexural stress across<br>an aluminum I-beam</h2><span>Four-point bending · strain profile · neutral axis</span></header><div class="lab-grid"><figure class="cad-card"><svg viewBox="0 0 760 430"><defs><marker id="a5" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M7 0L0 3.5L7 7"/></marker></defs><g class="shape"><rect x="50" y="55" width="660" height="34"/><circle cx="50" cy="108" r="15"/><circle cx="710" cy="108" r="15"/><path d="M270 10V53M490 10V53" marker-end="url(#a5)"/><path d="M310 220H450V238H389V382H450V400H310V382H371V238H310Z"/><path class="gauge" d="M330 226H430M330 278H430M330 338H430M330 392H430"/></g><g class="dim"><path d="M50 145H710" marker-start="url(#a5)" marker-end="url(#a5)"/><text x="340" y="168">1350 mm = 3 × 450</text><path d="M485 220V400" marker-start="url(#a5)" marker-end="url(#a5)"/><text x="505" y="315">152 mm deep</text><path d="M310 205H450" marker-start="url(#a5)" marker-end="url(#a5)"/><text x="345" y="195">76 mm</text><text x="205" y="250">t<tspan baseline-shift="sub" font-size="10">f</tspan> = 8.02 mm</text><text x="205" y="320">t<tspan baseline-shift="sub" font-size="10">w</tspan> = 6.57 mm</text><text x="335" y="420">GAUGES 1–4</text></g></svg><figcaption>AUTOCAD · FOUR-POINT BENDING + I-SECTION GAUGE LEVELS</figcaption></figure><div class="calc-stack"><article class="hand"><label>HAND CHECK · 200 kg</label><code>R<sub>A</sub> = P/2 = 981 N<br>M = 981(450)<br><b>= 441,450 N·mm</b><br>I<sub>x</sub> = 7.700×10⁶ mm⁴<br>σ<sub>top</sub> = -My/I, y = 76 mm<br><b>= -4.357 MPa</b></code></article><article class="sheet"><label>EXCEL / STRAIN RESULT</label><table><tr><th>Item</th><th>Result</th></tr><tr><td>Experimental neutral axis</td><td>76.87 mm</td></tr><tr><td>Theoretical neutral axis</td><td>76.00 mm</td></tr><tr><td>Difference</td><td>1.14%</td></tr><tr><td>Top stress at 800 kg</td><td>-11.50 MPa</td></tr><tr><td>Bottom stress at 800 kg</td><td>+12.78 MPa</td></tr></table></article></div></div><div class="finding"><b>Reading the result</b><p>The measured neutral axis landed within 0.87 mm of the theoretical centroid. Compression at the top and tension at the bottom form the expected near-linear flexural stress profile.</p></div></section>
+
+<section id="part-6" class="lab dark"><header><p>PART 06 · CVL 420</p><h2>Torsional behaviour<br>of an aluminum beam</h2><span>Cantilever tube · strain rosettes · angle of twist</span></header><div class="lab-grid"><figure class="cad-card"><svg viewBox="0 0 760 430"><defs><marker id="a6" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M7 0L0 3.5L7 7"/></marker></defs><g class="shape"><rect x="75" y="145" width="520" height="90" rx="45"/><path d="M75 105V275M60 115L75 105M60 145L75 135M60 175L75 165M60 205L75 195M60 235L75 225M60 265L75 255"/><path d="M595 115V290M595 290H700M650 290V370"/><circle cx="595" cy="190" r="42"/><path class="gauge" d="M250 150L290 190M250 230L290 190M330 150L370 190M330 230L370 190"/><path d="M650 365V310" marker-end="url(#a6)"/><path d="M620 105A60 60 0 0 1 690 160" marker-end="url(#a6)"/></g><g class="dim"><text x="90" y="125">FIXED END</text><text x="230" y="265">ALUMINUM CIRCULAR BEAM</text><text x="225" y="300">strain gauges 2, 4, 5, 7, 8, 9</text><text x="625" y="395">P</text><text x="675" y="95">T = P(430 mm)</text><text x="485" y="350">lever arm = 430 mm</text></g></svg><figcaption>AUTOCAD · CANTILEVER TORSION SETUP · lever arm inferred from reported T/P</figcaption></figure><div class="calc-stack"><article class="hand"><label>HAND TORSION MODEL</label><code>T = Pr = 196.2(430)<br><b>= 84,366 N·mm</b><br>τ = Tc/J<br>θ = TL/GJ<br>At T = 84.37 kN·mm:<br><b>τ<sub>theory</sub> = 2.021 MPa</b><br><b>θ = 0.001227 rad</b></code></article><article class="sheet"><label>EXCEL TORQUE RESPONSE</label><table><tr><th>Load</th><th>Torque</th><th>τ theory</th><th>θ</th></tr><tr><td>196.2 N</td><td>84.37 kN·mm</td><td>2.021</td><td>0.001227</td></tr><tr><td>392.4 N</td><td>168.73 kN·mm</td><td>4.042</td><td>0.002453</td></tr><tr><td>784.8 N</td><td>337.46 kN·mm</td><td>8.084</td><td>0.004906</td></tr></table><small>Stress in MPa; twist in radians. Both scale linearly with applied torque.</small></article></div></div><div class="finding"><b>Reading the result</b><p>The theoretical model predicts proportional torque, shear stress, and twist. Unequal gauge stresses reflect orientation, local strain transfer, zero offsets, and the difficulty of translating a multi-gauge state into ideal pure torsion.</p></div></section>
+<section class="synthesis"><p class="eyebrow">ENGINEERING DEVELOPMENT</p><h2>The drawing is the first calculation.</h2><p>Across all six experiments, the most important habit was maintaining a traceable chain from geometry and material, to idealized mechanics, to spreadsheet formulas, to measured behaviour. The discrepancies are not failures; they show exactly where alignment, contact, material variability, gauge placement, and model assumptions influence structural response.</p><div><span>AutoCAD-style drafting</span><span>Excel / Google Sheets</span><span>Strain-gauge analysis</span><span>Beam theory</span><span>Truss statics</span><span>Torsion</span></div></section></main><footer><span>© 2026 Yousif Shasha</span><span>Project 04 · Structural Behaviour Laboratory</span></footer><script src="script.js"></script></body></html>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#f4f4f0;--ink:#11120f;--muted:#676963;--line:#d6d6cf;--accent:#2457ff;--dark:#151714}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,Arial,sans-serif}a{color:inherit;text-decoration:none}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(244,244,240,.92);backdrop-filter:blur(12px);z-index:10}.logo{font-size:24px;font-weight:800;letter-spacing:-1px}.logo span{color:var(--accent)}nav{display:flex;gap:30px;font-size:13px;font-weight:700}nav a:hover,.project-link:hover,.contact-link:hover{color:var(--accent)}.nav-cta{border:1px solid var(--ink);padding:11px 16px;font-size:12px;font-weight:700}.hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.1fr .9fr;align-items:center;padding:8vw 8vw;position:relative;overflow:hidden}.grid-bg{position:absolute;inset:0;opacity:.35;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(90deg,#000 0%,transparent 75%)}.hero-copy,.hero-card{position:relative;z-index:1}.eyebrow,.tag{font:500 11px 'DM Mono',monospace;letter-spacing:1.5px}.hero h1{font-size:clamp(70px,10vw,150px);line-height:.82;letter-spacing:-7px;margin:24px 0 35px}.hero h1 span{color:var(--accent)}.hero-sub{font-size:18px;line-height:1.6;color:var(--muted);max-width:470px}.actions{display:flex;gap:12px;margin-top:34px}.button{display:inline-flex;align-items:center;gap:20px;padding:14px 19px;font-size:12px;font-weight:800}.primary{background:var(--ink);color:white}.secondary{border:1px solid var(--ink)}.hero-card{margin-left:5vw;aspect-ratio:1;max-width:520px;background:#171917;box-shadow:25px 25px 0 var(--accent);display:flex;flex-direction:column;justify-content:space-between;padding:25px;color:white}.blueprint{flex:1;position:relative;border:1px solid #3d413b;background-image:linear-gradient(#343832 1px,transparent 1px),linear-gradient(90deg,#343832 1px,transparent 1px);background-size:42px 42px}.beam{position:absolute;height:12px;background:#f4f4f0}.beam1{left:15%;right:15%;top:35%}.beam2{left:15%;right:15%;top:65%}.column{position:absolute;width:14px;height:65%;background:#f4f4f0;top:17.5%}.c1{left:15%}.c2{left:39%}.c3{left:61%}.c4{right:15%}.dimension{position:absolute;font:10px 'DM Mono';color:#aeb2aa}.d1{top:30%;left:47%}.d2{top:69%;left:47%}.node{position:absolute;width:18px;height:18px;border:2px solid var(--accent);border-radius:50%;background:#171917}.n1{left:13.5%;top:32%}.n2{right:13.5%;top:32%}.n3{left:13.5%;top:62%}.n4{right:13.5%;top:62%}.card-label{display:flex;justify-content:space-between;font:10px 'DM Mono';padding-top:18px}.section{padding:110px 8vw;border-top:1px solid var(--line)}.section-head{display:flex;gap:18px;align-items:center;margin-bottom:55px}.section-head span{font:500 11px 'DM Mono';color:var(--accent)}.section-head h2{font-size:42px;letter-spacing:-2px;margin:0}.about-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:10vw}.lead{font-size:34px;line-height:1.2;letter-spacing:-1.5px;margin:0}.about-grid p:not(.lead){font-size:16px;line-height:1.8;color:var(--muted)}.muted{font:11px 'DM Mono'!important;color:var(--ink)!important;margin-top:35px}.section-intro{max-width:600px;color:var(--muted);line-height:1.7;margin:-25px 0 45px}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.project{background:#fff;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}.project:hover{transform:translateY(-6px);box-shadow:12px 12px 0 #dfe1d9}.project-visual{height:280px;background:#20221e;position:relative;overflow:hidden;color:white}.project-visual>span{position:absolute;top:18px;left:18px;font:11px 'DM Mono';z-index:2}.project-body{padding:28px}.project-body h3{font-size:27px;letter-spacing:-1px;margin:9px 0 12px}.project-body p:not(.tag){color:var(--muted);line-height:1.65;font-size:14px}.project-link{display:inline-block;margin-top:14px;font-size:12px;font-weight:800}.building{background:linear-gradient(135deg,#1a1c19,#30342d)}.building-shape{position:absolute;left:28%;bottom:0;width:44%;height:78%;border:3px solid #f4f4f0;border-bottom:0;display:flex;flex-direction:column;gap:8px;padding:12px}.building-shape i{display:block;height:1px;background:#f4f4f0;box-shadow:0 0 0 1px #f4f4f0}.beam-project{background:#1d1f1b}.beam-line{position:absolute;left:14%;right:14%;top:55%;height:5px;background:#f4f4f0}.load{position:absolute;top:32%;font-size:28px;color:var(--accent)}.l1{left:28%}.l2{left:48%}.l3{left:68%}.survey{background:#20231f}.tripod{position:absolute;left:45%;top:30%;width:0;height:0;border-left:45px solid transparent;border-right:45px solid transparent;border-bottom:145px solid #f4f4f0;opacity:.9}.survey-line{position:absolute;left:10%;right:10%;bottom:23%;height:1px;background:var(--accent);transform:rotate(-12deg)}.materials{background:#191b18}.crystal{position:absolute;left:38%;top:25%;width:120px;height:120px;border:3px solid #f4f4f0;transform:rotate(45deg);box-shadow:35px 0 0 -2px #191b18,35px 0 0 1px #f4f4f0}.fluid{background:#1d211f}.venturi{position:absolute;left:18%;right:18%;top:43%;height:55px;border-top:4px solid #f4f4f0;border-bottom:4px solid #f4f4f0;clip-path:polygon(0 0,38% 0,48% 50%,38% 100%,0 100%,0 92%,33% 92%,43% 50%,33% 8%,0 8%,100% 8%,100% 92%,67% 92%,57% 50%,67% 8%,100% 8%,100% 0)}.cad{background:#ecece6}.floorplan{position:absolute;inset:45px;border:2px solid #222}.floorplan b{position:absolute;border:2px solid #222}.floorplan b:nth-child(1){inset:0 50% 50% 0}.floorplan b:nth-child(2){inset:0 0 50% 50%}.floorplan b:nth-child(3){inset:50% 50% 0 0}.floorplan b:nth-child(4){inset:50% 0 0 50%}.lab-list{border-top:1px solid var(--line)}.lab{display:grid;grid-template-columns:70px 1fr 30px;gap:20px;padding:28px 0;border-bottom:1px solid var(--line);align-items:center}.lab>span{font:11px 'DM Mono';color:var(--accent)}.lab h3{margin:0 0 5px;font-size:20px}.lab p{margin:0;color:var(--muted);font-size:13px}.lab b{font-size:18px}.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.skill-grid>div{padding:30px;border:1px solid var(--line);min-height:260px}.skill-grid h3{font-size:22px;line-height:1.65;letter-spacing:-.5px;font-weight:600}.resume{background:var(--dark);color:white}.resume-box{max-width:1050px;margin:auto;border:1px solid #454842;padding:55px;display:flex;justify-content:space-between;align-items:center}.resume-box h2{font-size:48px;letter-spacing:-2px;margin:10px 0}.resume-box p:not(.eyebrow){color:#aeb2aa;max-width:550px;line-height:1.7}.resume-box .primary{background:white;color:var(--ink);margin-top:15px}.resume-mark{font:700 72px/0.8 'DM Mono';text-align:right;opacity:.8}.resume-mark span{font-size:18px;color:var(--accent)}.contact{padding-bottom:80px}.contact-grid h2{font-size:48px;line-height:1.05;letter-spacing:-2px}.contact-grid h2 span{color:var(--accent)}.contact-grid p{color:var(--muted);line-height:1.7;max-width:400px}.contact-link{display:block;font-weight:800;padding:17px 0;border-bottom:1px solid var(--line);max-width:430px}.contact-link:hover{border-color:var(--accent)}footer{display:flex;justify-content:space-between;padding:25px 8vw;border-top:1px solid var(--line);font:10px 'DM Mono';color:var(--muted)}
+@media(max-width:850px){nav{display:none}.nav{padding:0 6vw}.nav-cta{display:none}.hero{grid-template-columns:1fr;padding:75px 7vw}.hero h1{font-size:85px}.hero-card{margin:70px 20px 0 0}.section{padding:80px 7vw}.about-grid,.contact-grid,.skill-grid{grid-template-columns:1fr;gap:35px}.project-grid{grid-template-columns:1fr}.section-head h2{font-size:34px}.resume-box{padding:35px;display:block}.resume-mark{display:none}.contact-grid h2{font-size:40px}footer{padding:25px 7vw;gap:20px;flex-direction:column}}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+
+.survey-map img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* Comfortable reading in a side-by-side browser window. */
+@media(max-width:1100px){nav{gap:18px;font-size:12px}.hero{grid-template-columns:1fr;padding:70px 7vw}.hero-card{margin:45px 20px 0 0;max-width:620px}.about-grid,.contact-grid{gap:6vw}.section{padding:85px 7vw}.lead{font-size:30px}.project-body h3{font-size:25px}.project-body p:not(.tag){font-size:15px}.eyebrow,.tag,.section-head span{font-size:12px}.project-link,.button{font-size:13px}.skill-grid{gap:18px}.skill-grid h3{font-size:20px}.resume-box{padding:40px}.contact-grid h2{font-size:42px}}
+@media(max-width:620px){.hero h1{font-size:clamp(64px,20vw,92px)}.hero-sub{font-size:16px}.section-head{margin-bottom:35px}.lead{font-size:27px}.project-visual{height:230px}.project-body{padding:22px}.section-intro{font-size:15px}.skill-grid>div{min-height:0;padding:24px}}
+
+.geotech{background:#24221d}.soil-layer{position:absolute;left:0;right:0;height:31%;border-top:2px solid rgba(244,244,240,.55)}.layer-one{top:32%;background:#5a4930}.layer-two{top:63%;background:#78613c}.layer-three{top:94%;background:#3e3525}.borehole{position:absolute;left:50%;top:18%;width:18px;height:72%;border:3px solid #f4f4f0;border-bottom:0;transform:translateX(-50%);background:repeating-linear-gradient(180deg,transparent 0 13px,rgba(244,244,240,.65) 13px 15px)}.hydraulics{background:#152326}.pipe{position:absolute;left:12%;right:12%;top:48%;height:58px;border:5px solid #f4f4f0;border-radius:34px}.water-flow{position:absolute;left:17%;right:17%;top:59%;height:7px;background:var(--accent);box-shadow:0 -16px 0 -2px #65bff4,0 16px 0 -2px #65bff4}.gauge{position:absolute;right:20%;top:24%;width:48px;height:48px;border:3px solid #f4f4f0;border-radius:50%}.gauge:after{content:'';position:absolute;width:18px;height:3px;left:21px;top:25px;background:#f4f4f0;transform:rotate(-38deg);transform-origin:left}.structural{background:#1d1f1b}.frame-column{position:absolute;bottom:42px;width:13px;height:172px;background:#f4f4f0}.column-left{left:24%}.column-right{right:24%}.frame-beam{position:absolute;left:24%;right:24%;top:65px;height:13px;background:#f4f4f0}.brace{position:absolute;top:74px;width:3px;height:174px;background:var(--accent);transform-origin:top}.brace-one{left:26%;transform:rotate(-39deg)}.brace-two{right:26%;transform:rotate(39deg)}
+.hydraulics-thumb{background:#0e252c}.hydraulics-thumb img{width:100%;height:100%;object-fit:cover;display:block}.hydraulics-thumb:after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,27,34,.08),rgba(7,27,34,.4));pointer-events:none}.hydraulics-thumb>span{color:#fff;text-shadow:0 1px 5px #09171c}
+.geotech-thumb{background:#24221d}.geotech-thumb img{width:100%;height:100%;object-fit:cover;display:block}.geotech-thumb:after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(20,16,10,.05),rgba(20,16,10,.35));pointer-events:none}.geotech-thumb>span{color:#fff;text-shadow:0 1px 5px #17130e}
+
+/* Main-page portrait and structural laboratory thumbnail. */
+.about-grid{grid-template-columns:minmax(220px,.72fr) 1fr 1fr;gap:5vw;align-items:center}
+.about-photo{margin:0;aspect-ratio:3/4;overflow:hidden;background:#ddd;border:1px solid var(--line);box-shadow:14px 14px 0 var(--accent)}
+.about-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.structural-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.structural-thumb:after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(2,13,20,.02),rgba(2,13,20,.26));pointer-events:none}
+.structural-thumb>span{color:#fff;text-shadow:0 1px 5px #06131b}
+@media(max-width:1100px){.about-grid{grid-template-columns:minmax(220px,.7fr) 1fr;gap:40px}.about-grid>div:last-child{grid-column:2}.about-photo{grid-row:1/3}}
+@media(max-width:850px){.about-grid{grid-template-columns:1fr}.about-grid>div:last-child{grid-column:auto}.about-photo{grid-row:auto;max-width:430px}}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root{--bg:#f4f4f0;--ink:#11120f;--muted:#676963;--line:#d6d6cf;--accent:#2457ff;--dark:#171917;--dark-muted:#b5b9b1;--dark-line:#3d423c;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}img{max-width:100%;display:block}
+.site-nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(244,244,240,.94);backdrop-filter:blur(12px);z-index:20}.logo{font-size:24px;font-weight:800;letter-spacing:-1px}.logo span{color:var(--accent)}.site-nav nav{display:flex;gap:30px;font-size:13px;font-weight:700}.site-nav nav a:hover{color:var(--accent)}.nav-button{border:1px solid var(--ink);padding:11px 16px;font-size:12px;font-weight:700}
+.eyebrow{font:500 11px 'DM Mono',monospace;letter-spacing:1.5px;margin:0 0 16px}.hero{min-height:78vh;background:var(--dark);color:var(--white);padding:90px 8vw;display:grid;grid-template-columns:1.05fr .95fr;gap:7vw;align-items:center}.hero-content{position:relative;z-index:2}.back-link{font:11px 'DM Mono',monospace;color:var(--dark-muted)}.back-link:hover{color:#fff}.hero-eyebrow{color:var(--dark-muted);margin-top:55px}.hero h1{font-size:clamp(52px,7vw,100px);line-height:.92;letter-spacing:-5px;margin:22px 0 30px}.hero h1 span{color:#4d70ff}.hero-description{max-width:680px;color:var(--dark-muted);line-height:1.8;font-size:17px}.hero-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}.hero-tags span{border:1px solid #50554e;padding:8px 11px;font:10px 'DM Mono',monospace;color:#d7dad4}.hero-image img{width:100%;height:430px;object-fit:cover;border:1px solid var(--dark-line);background:#171917}.hero-image p{font:10px 'DM Mono',monospace;color:var(--dark-muted);margin:12px 0 0}
+.section{padding:100px 8vw;border-top:1px solid var(--line)}.section.dark{background:var(--dark);color:var(--white);border-color:var(--dark-line)}.light-alt{background:#ecece6}.section-heading{margin-bottom:48px}.compact-heading{margin-bottom:35px}.section-heading h2,.overview-copy h2,.two-column h2{font-size:clamp(34px,4vw,52px);letter-spacing:-2px;line-height:1.02;margin:0}.section-subtitle{color:var(--muted);line-height:1.7;max-width:700px;margin:20px 0 0}.dark .section-subtitle{color:var(--dark-muted)}
+.overview-layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:8vw;align-items:start}.overview-copy>p:not(.eyebrow){max-width:720px;color:var(--muted);line-height:1.8}.overview-info{margin-top:45px}.toc{position:sticky;top:100px;border:1px solid var(--line);background:#fff;padding:24px}.toc .eyebrow{margin-bottom:8px}.toc a{display:grid;grid-template-columns:32px 1fr 20px;gap:10px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line);font-size:13px;font-weight:700}.toc a:last-child{border-bottom:0}.toc a:hover{color:var(--accent)}.toc a span{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:var(--accent);color:#fff;font:10px 'DM Mono'}.toc a b{font-size:15px;font-weight:400}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line)}.info-grid>div{padding:22px 18px;border-right:1px solid var(--line)}.info-grid>div:last-child{border-right:0}.info-label{display:block;font:10px 'DM Mono',monospace;color:var(--muted);margin-bottom:8px}.info-grid strong{font-size:13px}
+.tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.tool-card{border:1px solid var(--dark-line);padding:28px;min-height:220px;background:#1c1f1b}.tool-icon{display:inline-block;border:1px solid #50554e;padding:8px 11px;font:10px 'DM Mono';color:#d7dad4}.tool-card h3{font-size:22px;margin:30px 0 10px}.tool-card p{font-size:13px;line-height:1.7;color:var(--dark-muted)}
+.field-site-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:5vw;align-items:center}.field-plan-card{margin:0;background:#fff;border:1px solid var(--line);padding:18px}.field-plan-card img{width:100%;height:480px;object-fit:contain;background:#fff}.field-plan-card figcaption,.image-card figcaption,.diagram-card figcaption,.spreadsheet-card figcaption{color:var(--muted);font:11px 'DM Mono',monospace;line-height:1.6;margin-top:12px}.field-site-copy>p{color:var(--muted);line-height:1.85;max-width:560px}.field-facts{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:#fff;margin-top:30px}.field-facts div{padding:20px;border-bottom:1px solid var(--line)}.field-facts div:nth-child(odd){border-right:1px solid var(--line)}.field-facts div:nth-last-child(-n+2){border-bottom:0}.field-facts span{display:block;font:10px 'DM Mono';color:var(--muted);margin-bottom:8px}.field-facts strong{font-size:13px}
+.leveling-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:6vw;align-items:start}.process-list{display:grid;gap:0}.process-step{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:24px 0;border-top:1px solid var(--line)}.process-step:first-child{border-top:0}.process-step>span{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;background:var(--accent);color:#fff;font:10px 'DM Mono'}.process-step h3{font-size:20px;margin:0 0 7px}.process-step p{margin:0;color:var(--muted);line-height:1.75}.formula{display:inline-block;margin-top:22px;padding:14px 17px;background:#f0f1eb;border-left:3px solid var(--accent);font:500 16px 'DM Mono'}.formula.large{font-size:19px}.formula.light{background:#20231f;color:#fff;border-color:#4d70ff}.process-diagram{min-height:430px;background:#20231f;border:1px solid var(--dark-line);position:relative;overflow:hidden}.process-diagram:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#30352f 1px,transparent 1px),linear-gradient(90deg,#30352f 1px,transparent 1px);background-size:42px 42px;opacity:.7}.sight-line{position:absolute;left:18%;right:18%;top:47%;height:3px;background:#f4f4f0}.level-instrument{position:absolute;left:45%;top:41%;width:78px;height:58px;border:3px solid #f4f4f0;background:#20231f;display:grid;place-items:center;text-align:center;font:10px 'DM Mono';color:#fff}.level-instrument:before{content:"";position:absolute;width:120px;height:1px;background:#4d70ff;left:-24px;top:28px;z-index:-1}.level-point{position:absolute;width:120px;text-align:center;color:#fff;font-size:12px}.level-point:before{content:"";display:block;width:18px;height:18px;border:3px solid #4d70ff;border-radius:50%;background:#20231f;margin:auto}.level-point b{display:block;margin-top:8px}.level-point span{display:block;font:10px 'DM Mono';color:#b5b9b1;margin-top:3px}.lp1{left:5%;top:42%}.lp2{right:5%;top:42%}.reading-card{position:absolute;background:#f4f4f0;color:#11120f;padding:14px 16px;border-left:3px solid #4d70ff}.reading-card strong{display:block;font-size:12px}.reading-card small{font:9px 'DM Mono';color:#676963}.rc1{left:12%;top:20%}.rc2{right:10%;bottom:19%}.method-note{margin-top:16px;border-left:3px solid var(--accent);background:#fff;padding:18px;color:var(--muted);line-height:1.65;font-size:13px}
+.two-column,.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw;align-items:start}.two-column>div>p,.case-grid p{color:var(--muted);line-height:1.8}.result-card{background:#fff;border:1px solid var(--line);padding:25px}.result-card>span{font:10px 'DM Mono';color:var(--accent)}.result-row{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:13px}.result-row strong{font:500 13px 'DM Mono'}.result-card>p{font-size:12px;color:var(--muted);line-height:1.7}.accepted{color:#1b6b37!important}.clean-list{padding-left:20px;color:var(--muted);line-height:2}.image-card,.diagram-card,.spreadsheet-card{margin:0}.image-card{background:#fff;border:1px solid var(--line);padding:14px}.image-card img{width:100%;background:#f4f4f0}.angle-card img{aspect-ratio:1000/560;object-fit:contain}.diagram-card{background:#fff;border:1px solid var(--dark-line);padding:10px}.diagram-card img{width:100%;background:#f4f4f0}.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:35px}.metric-row>div{border:1px solid var(--dark-line);padding:22px;background:#1d201c}.metric-row strong{display:block;font:500 25px 'DM Mono';letter-spacing:-1px}.metric-row span{display:block;font-size:11px;color:var(--dark-muted);margin-top:9px}.metric-row.dark-text>div{border-color:var(--line);background:#fff}.metric-row.dark-text span{color:var(--muted)}
+.traverse-graphic{border:1px solid var(--dark-line);overflow:hidden}.traverse-graphic svg{display:block;width:100%;height:auto}.spreadsheet-card{background:#fff;border:1px solid var(--line);padding:18px;max-width:1150px}.image-button{border:0;background:none;padding:0;display:block;width:100%;cursor:zoom-in;position:relative}.image-button img{width:100%;border:1px solid var(--line)}.image-button span{position:absolute;right:15px;bottom:15px;background:var(--ink);color:#fff;padding:10px 13px;font:10px 'DM Mono'}.calculation-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:22px}.calculation-cards article{background:#fff;border:1px solid var(--line);padding:25px}.calculation-cards span{font:11px 'DM Mono';color:var(--accent)}.calculation-cards h3{font-size:19px;margin:20px 0 8px}.calculation-cards p{font:14px 'DM Mono';color:var(--muted)}.contribution-section p{font-size:16px}.role-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.role-tags span{color:var(--ink);border:1px solid var(--line);padding:8px 11px;font:10px 'DM Mono'}.takeaways p{border-bottom:1px solid var(--dark-line);padding:16px 0;margin:0;color:#fff!important}.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:100;align-items:center;justify-content:center;padding:40px}.lightbox.open{display:flex}.lightbox img{max-width:min(1200px,92vw);max-height:82vh;object-fit:contain}.lightbox p{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#fff;font:11px 'DM Mono'}.lightbox-close{position:absolute;right:28px;top:20px;background:none;border:0;color:#fff;font-size:40px;cursor:pointer}footer{display:flex;justify-content:space-between;gap:20px;padding:25px 8vw;border-top:1px solid var(--line);font:10px 'DM Mono';color:var(--muted)}
+@media(max-width:900px){.site-nav nav{display:none}.hero,.overview-layout,.field-site-layout,.leveling-layout,.two-column,.case-grid{grid-template-columns:1fr}.hero{padding:75px 7vw}.hero-image{margin-top:20px}.section{padding:75px 7vw}.info-grid,.tools-grid{grid-template-columns:1fr 1fr}.toc{position:static}.field-plan-card img{height:auto}.metric-row,.calculation-cards{grid-template-columns:1fr}.overview-layout{gap:45px}}
+@media(max-width:560px){.nav-button{display:none}.hero h1{letter-spacing:-3px}.info-grid,.tools-grid,.field-facts{grid-template-columns:1fr}.info-grid>div{border-right:0;border-bottom:1px solid var(--line)}.info-grid>div:last-child{border-bottom:0}.field-facts div:nth-child(odd){border-right:0}.field-facts div:nth-last-child(-n+2){border-bottom:1px solid var(--line)}.field-facts div:last-child{border-bottom:0}.hero-image img{height:auto}.section{padding:60px 6vw}.process-diagram{min-height:360px}.rc1{left:5%;top:14%}.rc2{right:5%;bottom:12%}}
+/* FIX HERO IMAGE ZOOM */
+.hero-image img{width:100%;height:100%;object-fit:contain!important;object-position:center}
+@media(max-width:1100px){.site-nav{padding:0 6vw}.site-nav nav{gap:18px;font-size:12px}.hero{grid-template-columns:1fr;padding:75px 7vw;gap:40px}.hero-image{max-width:760px}.hero-image img{height:auto;min-height:300px}.section{padding:85px 7vw}.overview-layout{grid-template-columns:minmax(0,1fr) 280px;gap:5vw}.overview-copy>p:not(.eyebrow),.field-site-copy>p,.two-column>div>p,.case-grid p{font-size:16px}.toc a,.result-row{font-size:14px}.info-label,.field-facts span,.tool-icon,.metric-row span{font-size:11px}.info-grid strong,.field-facts strong,.result-row strong{font-size:14px}.tool-card p,.result-card>p,.method-note{font-size:14px}.process-step p{font-size:16px}.field-plan-card img{height:auto}.calculation-cards p{font-size:15px}}
+@media(max-width:700px){.site-nav nav{display:none}.nav-button{display:none}.hero{padding:65px 6vw}.hero h1{font-size:clamp(52px,15vw,78px)}.hero-description{font-size:16px}.section{padding:65px 6vw}.overview-layout{grid-template-columns:1fr}.toc{position:static}.field-site-layout,.leveling-layout,.two-column,.case-grid{grid-template-columns:1fr;gap:35px}.info-grid,.tools-grid,.metric-row,.calculation-cards{grid-template-columns:1fr}.info-grid>div{border-right:0;border-bottom:1px solid var(--line)}.field-facts{grid-template-columns:1fr}.field-facts div:nth-child(odd){border-right:0}.field-facts div:nth-last-child(-n+2){border-bottom:1px solid var(--line)}.field-facts div:last-child{border-bottom:0}.process-diagram{min-height:340px}.formula{font-size:15px}.formula.large{font-size:17px}footer{padding:25px 6vw;flex-direction:column}}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surveying & Geospatial Field Methods | Yousif Shasha</title>
+  <meta name="description" content="CVL323 surveying portfolio project by Yousif Shasha.">
+  <link rel="stylesheet" href="surveying.css">
+</head>
+<body>
+  <!-- =========================================
+       EDITING GUIDE
+       - Main text/content: edit this HTML file.
+       - Images: replace files inside assets/.
+       - Layout/colors: edit surveying.css.
+       - Interactions: edit surveying.js.
+       ========================================= -->
+
+  <header class="site-nav">
+    <a class="logo" href="index.html">YS<span>.</span></a>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="nav-button" href="index.html#contact">Let's Connect</a>
+  </header>
+
+  <main>
+    <!-- =========================================
+         HERO
+         ========================================= -->
+    <section class="hero">
+      <div class="hero-content">
+        <a class="back-link" href="index.html#projects">← Back to projects</a>
+        <p class="eyebrow hero-eyebrow">CVL323 · FUNDAMENTALS OF SURVEYING · FALL 2025</p>
+        <h1>Surveying &<br><span>Geospatial</span><br>Field Methods</h1>
+        <p class="hero-description">
+          A field-based surveying project involving leveling, total-station observations,
+          elevation determination, measurement-error analysis, and closed-traverse calculations.
+        </p>
+        <div class="hero-tags">
+          <span>FIELD SURVEYING</span>
+          <span>TOTAL STATION</span>
+          <span>LEVELING</span>
+          <span>TRAVERSING</span>
+        </div>
+      </div>
+
+      <!-- EDIT: This is the original-style technical image at the top of the page. -->
+      <div class="hero-image">
+        <img src="assets/hero-survey-control.png" alt="Technical surveying control graphic showing a closed survey network">
+        <p>Survey-control graphic · field measurements · geometric control</p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PROJECT OVERVIEW + TABLE OF CONTENTS
+         ========================================= -->
+    <section class="section" id="overview">
+      <div class="overview-layout">
+        <div class="overview-copy">
+          <p class="eyebrow">PROJECT OVERVIEW</p>
+          <h2>From field observations to checked survey results.</h2>
+          <p>
+            This project brought together the surveying techniques developed throughout CVL323.
+            The work included differential leveling, measurement-error analysis, total-station
+            angle observations, trigonometric leveling, and closed-traverse calculations.
+          </p>
+          <p>
+            I served as the <strong>field leader for a six-person team</strong> and was responsible
+            for the project's calculations and data processing, connecting the team's raw field
+            observations to the final checked results.
+          </p>
+
+          <div class="info-grid overview-info">
+            <div><span class="info-label">COURSE</span><strong>CVL323</strong></div>
+            <div><span class="info-label">SEMESTER</span><strong>Fall 2025</strong></div>
+            <div><span class="info-label">ROLE</span><strong>Group Leader + Calculations Lead</strong></div>
+            <div><span class="info-label">TEAM</span><strong>6 people</strong></div>
+          </div>
+        </div>
+
+        <aside class="toc" aria-label="Table of contents">
+          <p class="eyebrow">TABLE OF CONTENTS</p>
+          <a href="#field-site"><span>01</span>Field Site</a>
+          <a href="#leveling"><span>02</span>Leveling — Part One</a>
+          <a href="#differential-leveling"><span>03</span>Differential Leveling</a>
+          <a href="#angles"><span>04</span>Angle Measurement</a>
+          <a href="#trig"><span>05</span>Trigonometric Leveling</a>
+          <a href="#traverse"><span>06</span>Closed Traverse</a>
+          <a href="#calculations"><span>07</span>Sample Calculations</a>
+          <a href="#contribution"><span>08</span>My Contribution</a>
+          <a href="#takeaways"><span>09</span>Key Takeaways</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================================
+         TOOLS & EQUIPMENT
+         ========================================= -->
+    <section class="section dark" id="tools">
+      <div class="section-heading">
+        <p class="eyebrow">TOOLS & EQUIPMENT</p>
+        <h2>Field + digital workflow.</h2>
+      </div>
+      <div class="tools-grid">
+        <article class="tool-card"><span class="tool-icon">01</span><h3>Total Station</h3><p>Horizontal directions, zenith angles, distances, and trigonometric leveling.</p></article>
+        <article class="tool-card"><span class="tool-icon">02</span><h3>Automatic Level</h3><p>Differential leveling, backsight/foresight readings, and elevation checks.</p></article>
+        <article class="tool-card"><span class="tool-icon">03</span><h3>Field Equipment</h3><p>Tripod, level rods, target rod, measuring tape, chalk, and field notes.</p></article>
+        <article class="tool-card"><span class="tool-icon">04</span><h3>Excel / Google Sheets</h3><p>Data organization, calculations, averages, error checks, and result tables.</p></article>
+      </div>
+    </section>
+
+    <!-- =========================================
+         FIELD SITE
+         ========================================= -->
+    <section class="section" id="field-site">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">01 · FIELD SITE</p>
+        <h2>Surveying around the campus.</h2>
+      </div>
+
+      <div class="field-site-layout">
+        <figure class="field-plan-card">
+          <img src="assets/field-site-plan.png" alt="Surveying site plan showing the Architecture Building and surrounding buildings">
+          <figcaption>Field-site plan showing the survey stations and surrounding campus buildings.</figcaption>
+        </figure>
+
+        <div class="field-site-copy">
+          <p>
+            The field work was carried out around the assigned survey area near the Architecture
+            Building. The survey network connected multiple control points and allowed the team
+            to collect the observations needed for leveling, angle measurement, trigonometric
+            leveling, and traverse calculations.
+          </p>
+          <p>
+            The survey was organized as a closed field exercise so that the measurements could be
+            checked for consistency and adjusted when necessary.
+          </p>
+          <div class="field-facts">
+            <div><span>Survey type</span><strong>Closed field network</strong></div>
+            <div><span>Control points</span><strong>D1–D6 / station network</strong></div>
+            <div><span>Location</span><strong>TMU Campus</strong></div>
+            <div><span>Primary purpose</span><strong>Measure → calculate → check</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         LEVELING — PART ONE
+         ========================================= -->
+    <section class="section light-alt" id="leveling">
+      <div class="section-heading">
+        <p class="eyebrow">02 · LEVELING — PART ONE</p>
+        <h2>Determining elevation differences with an automatic level.</h2>
+      </div>
+
+      <div class="leveling-layout">
+        <div class="process-list">
+          <div class="process-step"><span>01</span><div><h3>Instrument setup</h3><p>The automatic level was mounted securely on the tripod and leveled so that the line of sight was horizontal.</p></div></div>
+          <div class="process-step"><span>02</span><div><h3>Backsight reading</h3><p>The leveling staff was placed on a point with a known elevation, or benchmark. The staff reading was recorded as the <strong>backsight</strong> and used to establish the instrument height.</p></div></div>
+          <div class="process-step"><span>03</span><div><h3>Foresight reading</h3><p>The staff was moved to the next point, or turning point. The reading taken from the same horizontal line of sight was recorded as the <strong>foresight</strong>.</p></div></div>
+          <div class="process-step"><span>04</span><div><h3>Elevation calculation</h3><p>The difference in elevation between the two points was determined from the backsight and foresight readings.</p></div></div>
+          <div class="formula large">ΔH = Backsight − Foresight</div>
+        </div>
+
+        <div class="leveling-side">
+          <div class="process-diagram">
+            <div class="level-point lp1"><b>Benchmark</b><span>Known elevation</span></div>
+            <div class="sight-line"></div>
+            <div class="level-instrument"><span>Automatic<br>Level</span></div>
+            <div class="level-point lp2"><b>Turning Point</b><span>Foresight</span></div>
+            <div class="reading-card rc1"><strong>Backsight</strong><small>First staff reading</small></div>
+            <div class="reading-card rc2"><strong>Foresight</strong><small>Next staff reading</small></div>
+          </div>
+          <div class="method-note"><strong>Why the setup matters:</strong> Keeping the instrument properly leveled and using a consistent line of sight improves the reliability of the elevation difference.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         DIFFERENTIAL LEVELING
+         ========================================= -->
+    <section class="section" id="differential-leveling">
+      <div class="section-heading">
+        <p class="eyebrow">03 · DIFFERENTIAL LEVELING</p>
+        <h2>Checking closure and adjusting elevations.</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            A closed leveling loop was used to compare the starting and ending benchmark
+            elevations. The measurements were processed into elevations, checked for misclosure,
+            compared with the permissible closure, and adjusted where required.
+          </p>
+          <p>
+            This part of the work demonstrated that field measurements need a quality check before
+            they are used as final engineering values.
+          </p>
+        </div>
+        <div class="result-card">
+          <span>RESULT CHECK</span>
+          <div class="result-row"><b>Misclosure</b><strong>0.01 ft</strong></div>
+          <div class="result-row"><b>Permissible closure</b><strong>0.0197 ft</strong></div>
+          <div class="result-row"><b>Outcome</b><strong class="accepted">Acceptable ✓</strong></div>
+          <p>Elevations were adjusted using proportional correction after the closure check.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         ANGLE MEASUREMENT
+         ========================================= -->
+    <section class="section" id="angles">
+      <div class="section-heading">
+        <p class="eyebrow">04 · ANGLE MEASUREMENT</p>
+        <h2>Direct and reverse total-station observations.</h2>
+      </div>
+      <div class="two-column angle-layout">
+        <div>
+          <p>
+            The total station was set up at survey stations and used to observe horizontal
+            directions to target points. Direct and reverse observations were recorded so the
+            readings could be checked and averaged.
+          </p>
+          <ul class="clean-list">
+            <li>Tripod setup and instrument security</li>
+            <li>Centering and leveling</li>
+            <li>Target sighting and focusing</li>
+            <li>Direct and reverse observations</li>
+            <li>Comparison of repeated readings</li>
+          </ul>
+        </div>
+        <figure class="image-card angle-card">
+          <img src="assets/angle-measurement-clean.svg" alt="Clean editable diagram showing three total-station sight lines from P to Q, R and S">
+          <figcaption>Clean redraw of the three sight lines used for the angle-measurement exercise.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- =========================================
+         TRIGONOMETRIC LEVELING
+         ========================================= -->
+    <section class="section dark" id="trig">
+      <div class="section-heading">
+        <p class="eyebrow">05 · TRIGONOMETRIC LEVELING</p>
+        <h2>Using geometry to determine elevation.</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            Trigonometric leveling used the total station to combine measured distance, zenith
+            angle, instrument height, and target height. The vertical component was determined
+            from the observed slope distance and angle.
+          </p>
+          <div class="formula light large">V = S cos(Z) = S sin(α)</div>
+          <div class="formula light large">ΔElev = hᵢ + V − hᵣ</div>
+          <div class="metric-row">
+            <div><strong>97.0032 m</strong><span>Observed benchmark elevation</span></div>
+            <div><strong>0.0032 m</strong><span>Benchmark misclosure</span></div>
+            <div><strong>0.0073615 m</strong><span>Permissible closure</span></div>
+          </div>
+        </div>
+        <figure class="diagram-card">
+          <img src="assets/trig-leveling-diagram.png" alt="Trigonometric leveling geometry showing total station, target, slope distance, zenith angle and elevation difference">
+        </figure>
+      </div>
+    </section>
+
+    <!-- =========================================
+         CLOSED TRAVERSE
+         ========================================= -->
+    <section class="section" id="traverse">
+      <div class="section-heading">
+        <p class="eyebrow">06 · CLOSED TRAVERSE</p>
+        <h2>Angles → azimuths → coordinates.</h2>
+      </div>
+      <div class="case-grid">
+        <div>
+          <p>
+            The traverse exercise extended the field measurements into coordinate control. The
+            observations were processed through angular checks, azimuths, departures, latitudes,
+            coordinates, and adjustment.
+          </p>
+          <div class="metric-row dark-text">
+            <div><strong>20″</strong><span>Angular misclosure</span></div>
+            <div><strong>0.00632 m</strong><span>Linear misclosure</span></div>
+            <div><strong>1 : 58,000</strong><span>Relative precision</span></div>
+          </div>
+        </div>
+        <div class="traverse-graphic">
+          <svg viewBox="0 0 700 450" role="img" aria-label="Closed traverse schematic">
+            <rect width="700" height="450" fill="#20231f"/>
+            <polyline points="120,100 570,145 480,350 180,325 120,100" fill="none" stroke="#f4f4f0" stroke-width="5"/>
+            <circle cx="120" cy="100" r="11" fill="#2457ff"/><circle cx="570" cy="145" r="11" fill="#2457ff"/><circle cx="480" cy="350" r="11" fill="#2457ff"/><circle cx="180" cy="325" r="11" fill="#2457ff"/>
+            <g fill="#fff" font-family="Arial" font-size="20" font-weight="700"><text x="90" y="82">A1</text><text x="585" y="140">A2</text><text x="495" y="378">A4</text><text x="145" y="350">A5</text></g>
+            <text x="35" y="415" fill="#b5b9b1" font-family="Arial" font-size="16">Schematic of the closed traverse</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         SAMPLE CALCULATIONS
+         ========================================= -->
+    <section class="section light-alt" id="calculations">
+      <div class="section-heading">
+        <p class="eyebrow">07 · SAMPLE CALCULATIONS</p>
+        <h2>Selected spreadsheet work.</h2>
+        <p class="section-subtitle">A cropped section of the calculation sheet is shown below so the field data is readable without excessive empty spreadsheet space.</p>
+      </div>
+      <figure class="spreadsheet-card">
+        <button class="image-button" data-image="assets/excel-sample-calculations-cropped.png" data-caption="Cropped sample calculation sheet from the surveying project.">
+          <img src="assets/excel-sample-calculations-cropped.png" alt="Cropped surveying calculation spreadsheet showing direct and reverse observations, distances and elevation differences">
+          <span>Click to enlarge</span>
+        </button>
+        <figcaption>Sample calculation sheet showing direct/reverse observations, horizontal circle readings, zenith angles, distances, and elevation differences.</figcaption>
+      </figure>
+      <div class="calculation-cards">
+        <article><span>01</span><h3>Elevation difference</h3><p>ΔH = Backsight − Foresight</p></article>
+        <article><span>02</span><h3>Vertical component</h3><p>V = S cos(Z)</p></article>
+        <article><span>03</span><h3>Traverse control</h3><p>Misclosure → correction → adjusted coordinates</p></article>
+      </div>
+    </section>
+
+    <!-- =========================================
+         CONTRIBUTION
+         ========================================= -->
+    <section class="section" id="contribution">
+      <div class="two-column contribution-section">
+        <div>
+          <p class="eyebrow">08 · MY CONTRIBUTION</p>
+          <h2>Field leadership + calculations.</h2>
+        </div>
+        <div>
+          <p>
+            I served as the <strong>field leader for a six-person surveying team</strong>. I was
+            responsible for coordinating the field workflow, organizing the measurement sequence,
+            helping the team maintain consistent instrument setup and observation procedures, and
+            keeping the field work organized and efficient.
+          </p>
+          <p>
+            I was also responsible for <strong>all of the project's calculations and data
+            processing</strong>. This included organizing raw field observations, processing direct
+            and reverse total-station readings, calculating elevation differences, checking closure
+            and misclosure, applying adjustments, and completing the traverse calculations involving
+            angles, azimuths, departures, latitudes, and coordinates.
+          </p>
+          <p>
+            In practical terms, my role connected the field work to the final engineering results:
+            I helped lead the six-person team in the field and was responsible for turning the
+            team's measurements into organized, checked, and interpretable calculations.
+          </p>
+          <div class="role-tags">
+            <span>FIELD LEADER</span><span>CALCULATIONS LEAD</span><span>DATA PROCESSING</span><span>ERROR CHECKING</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         TAKEAWAYS
+         ========================================= -->
+    <section class="section dark" id="takeaways">
+      <div class="two-column">
+        <div><p class="eyebrow">09 · KEY TAKEAWAYS</p><h2>What I developed through the project.</h2></div>
+        <div class="takeaways">
+          <p>Practical total-station and automatic-level setup</p>
+          <p>Field data collection and organized field notes</p>
+          <p>Elevation and coordinate calculations</p>
+          <p>Measurement-error and closure analysis</p>
+          <p>Traverse adjustment and coordinate control</p>
+          <p>Team leadership in a field environment</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image lightbox for the spreadsheet -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightbox-image" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <footer>
+    <span>© 2026 Yousif Shasha</span>
+    <span>CVL323 · Surveying & Geospatial Field Methods</span>
+  </footer>
+  <script src="surveying.js"></script>
+</body>
+</html>
+
+/* Surveying project page: spreadsheet lightbox only. */
+const lightbox = document.querySelector('#lightbox');
+const lightboxImage = document.querySelector('#lightbox-image');
+const lightboxCaption = document.querySelector('#lightbox-caption');
+const imageButtons = document.querySelectorAll('.image-button');
+const closeButton = document.querySelector('.lightbox-close');
+
+imageButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    lightboxImage.src = button.dataset.image;
+    lightboxImage.alt = button.querySelector('img').alt;
+    lightboxCaption.textContent = button.dataset.caption || '';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+  });
+});
+
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden','true');
+  lightboxImage.src='';
+}
+
+closeButton.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (event) => {
+  if(event.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (event) => {
+  if(event.key === 'Escape') closeLightbox();
+});
