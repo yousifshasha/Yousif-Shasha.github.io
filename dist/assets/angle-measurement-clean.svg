@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Total station angle measurement sketch</title>
+<desc id="desc">Clean editable vector version of the user's sketch showing a station P and three sight lines toward Q, R and S.</desc>
+<style>
+.t{font-family:Arial,sans-serif;fill:#20231f}.label{font-size:24px;font-weight:700}.small{font-size:18px}.line{stroke:#2457ff;stroke-width:6;fill:none}.ground{stroke:#20231f;stroke-width:4}.building{fill:#e9e9e3;stroke:#20231f;stroke-width:3}
+</style>
+<rect width="1000" height="560" fill="#f4f4f0"/>
+<text x="55" y="50" class="t label">TOTAL STATION — THREE ANGLE SIGHT LINES</text>
+<!-- simplified site context -->
+<rect x="80" y="120" width="270" height="220" rx="5" class="building"/>
+<text x="165" y="235" class="t label">MON</text>
+<rect x="650" y="120" width="270" height="250" rx="5" class="building"/>
+<text x="735" y="250" class="t label">EPH</text>
+<!-- station and points -->
+<circle cx="610" cy="150" r="12" fill="#2457ff"/>
+<text x="625" y="142" class="t label">P</text>
+<circle cx="360" cy="150" r="9" fill="#2457ff"/><text x="342" y="132" class="t label">Q</text>
+<circle cx="370" cy="350" r="9" fill="#2457ff"/><text x="350" y="382" class="t label">R</text>
+<circle cx="610" cy="350" r="9" fill="#2457ff"/><text x="625" y="358" class="t label">S</text>
+<!-- three rays -->
+<line x1="610" y1="150" x2="360" y2="150" class="line"/>
+<line x1="610" y1="150" x2="370" y2="350" class="line"/>
+<line x1="610" y1="150" x2="610" y2="350" class="line"/>
+<!-- arcs for three observed directions -->
+<text x="485" y="175" class="t small">Angle 1</text>
+<text x="455" y="215" class="t small">Angle 2</text>
+<text x="515" y="255" class="t small">Angle 3</text>
+<!-- baseline -->
+<line x1="55" y1="430" x2="945" y2="430" class="ground"/>
+<text x="420" y="470" class="t small">Schematic redraw based on the field sketch supplied for the angle-measurement exercise</text>
+</svg>

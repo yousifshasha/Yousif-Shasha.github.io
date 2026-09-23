@@ -1,0 +1,143 @@
+\documentclass[11pt]{article}
+
+% -------------------- PACKAGES --------------------
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+
+% -------------------- SETTINGS --------------------
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Bullet spacing
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=3pt}
+
+% Section style
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0pt}{}
+  [\vspace{1.5pt}\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{6pt}
+
+% -------------------- COMMANDS --------------------
+\newcommand{\contact}[1]{\small #1}
+
+\newcommand{\entry}[4]{% title, right, subtitle, dates/loc
+  \begin{tabularx}{\textwidth}{X r}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}\vspace{-2pt}
+}
+
+\newcommand{\entrySingle}[2]{% left, right
+  \begin{tabularx}{\textwidth}{X r}
+    \textbf{#1} & \textbf{#2}
+  \end{tabularx}\vspace{-2pt}
+}
+
+\newcommand{\tightItem}[1]{\item \small #1}
+
+% -------------------- DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADER --------------------
+\begin{center}
+{\LARGE \textbf{Yousif Shasha}}\\[4pt]
+\contact{Mississauga, ON \;\;|\;\; (647) 887-2009 \;\;|\;\;
+\href{mailto:yousif.shasha0@gmail.com}{yousif.shasha0@gmail.com} \;\;|\;\;
+\href{https://www.linkedin.com/in/yousif-shasha-177412375}{LinkedIn}} 
+\;\;|\;\;
+\href{https://yousifshasha.github.io/Yousif-Shasha.github.io/}
+{Portfolio}
+
+\end{center}
+
+\vspace{-4pt}
+
+% -------------------- SUMMARY --------------------
+\section*{Summary}
+\small{
+Structural Engineering student seeking a 12-month Engineering Co-op with Aecon's Civil West division; preferred location: Toronto, ON. Academic experience in surveying, AutoCAD, Excel, and materials testing, plus fabrication with TMU's Concrete Canoe team. Supervisory experience coordinating tasks and training employees; interested in heavy civil construction.}
+
+% -------------------- EDUCATION --------------------
+\section*{Education}
+\entry
+{Toronto Metropolitan University}{Toronto, ON}
+{B.Eng. Structural Engineering}{Expected 2029}
+\begin{itemize}
+  \tightItem{Relevant Coursework: Surveying, Project Management, Concrete Materials, Foundation and Soils Engineering, Civil Engineering Systems, Structural Design and Analysis, and Transportation Engineering.}
+  \tightItem{Awards: \textit{Dean's List - Fall 2025, Winter 2026. Top 3 Project, Geology for Engineers }}
+\end{itemize}
+\vspace{2pt}
+
+
+% -------------------- EXPERIENCE --------------------
+\section*{Experience}
+\entry
+{Groupe Adonis}{Mississauga, ON}
+{Grocery Supervisor }{July 2023 -- Present}
+\begin{itemize}
+  \tightItem{Supervise 2--6 employees, coordinate daily tasks, and train new hires to maintain efficient workflows and teamwork. }
+  \tightItem{Manage inventory, stocking, palletizing, and organization of 10,000+ products to maintain availability.}
+  \tightItem{Problem-solve customer and operational issues using leadership, communication,  and adaptability in a fast-paced setting.
+  }
+  
+\end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section*{Projects}
+\entrySingle{Topographic Surveying \;---\; \textit{Total Station, Excel}}{October 2025}
+\begin{itemize}
+  \tightItem{Collected total-station elevation, angle, and distance measurements with a 0.0032 m benchmark misclosure.}
+  \tightItem{Calculated traverse components, checked closure, and applied coordinate adjustments.}
+  \tightItem{Checked field accuracy using direct/reverse observations and differential-levelling checks.}
+\end{itemize}
+
+\entrySingle{Structural Mechanics \;---\; \textit{AutoCAD, Excel}}{Fall 2025 - Winter 2026}
+\begin{itemize}
+  \tightItem{Produced AutoCAD drawings for aluminum, timber, and composite structural specimens.}
+  \tightItem{Performed hand and Excel calculations for stress, deflection, truss forces, and torsion.}
+  \tightItem{Compared theoretical results with strain-gauge and dial-gauge measurements, with a 1.14\% neutral-axis difference.}
+\end{itemize}
+
+\entrySingle{Geotechnical Engineering Laboratory}{Winter 2026}
+\begin{itemize}
+  \tightItem{Classified soils using Atterberg limits and sieve analysis to assess plasticity and gradation.}
+  \tightItem{Evaluated compaction, permeability, and consolidation; identified a maximum dry unit weight of 19.54 kN/m$^3$.}
+  \tightItem{Assessed soil strength through direct shear and compression testing, measuring a $37.4^\circ$ friction angle.}
+\end{itemize}
+
+\entrySingle{Hydraulics Engineering \;---\; \textit{EPANET, HEC-RAS, Excel}}{Winter 2026}
+\begin{itemize}
+  \tightItem{Modelled pipe-network flow and pressure in EPANET, varying roughness, diameter, demand, and redundancy.}
+  \tightItem{Investigated pressurized flow, pipe losses, weirs, and sluice-gate behaviour through seven laboratory experiments.}
+  \tightItem{Used HEC-RAS and Excel to compare flood profiles up to the 100-year event and assess velocity and erosion risk.}
+\end{itemize}
+
+% -------------------- LEADERSHIP --------------------
+\section*{Leadership \& Activities}
+\entry
+{Toronto Metropolitan University Concrete Canoe Team}{Toronto, ON}
+{Construction Team Member }{September 2025 -- Present}
+\begin{itemize}
+  \tightItem{Fabricated canoe components through precision cutting, sanding, taping, and assembly to meet competition requirements.}
+  \tightItem{Tested alternative materials and fabrication methods to improve structural performance and constructability.}
+  \tightItem{Documented prototype results and collaborated with team members to guide iterative design improvements.}
+\end{itemize}
+
+
+% -------------------- SKILLS --------------------
+\section*{Skills}
+\small{
+\textbf{Technical:} AutoCAD, Microsoft Excel, Revit, ETABS (Basic), MATLAB, Python, HEC-RAS, EPANET, LaTeX \\
+\textbf{Engineering:} Surveying, Engineering Materials Testing, Technical Reporting, Data Analysis, Uncertainty \& Error Analysis, Structural Analysis, Strength of Materials, Hydraulics.  \\
+\textbf{Soft:} Problem Solving, Communication, Teamwork, Time Management, Adaptability, Leadership. 
+}
+
+\end{document}

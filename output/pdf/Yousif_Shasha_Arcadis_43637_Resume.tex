@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+
+% -------------------- PACKAGES --------------------
+\usepackage[margin=0.4in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+
+% -------------------- SETTINGS --------------------
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Bullet spacing
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=1pt}
+
+% Section style
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0pt}{}
+  [\vspace{1.5pt}\titlerule]
+
+\titlespacing{\section}{0pt}{4pt}{3pt}
+
+% -------------------- COMMANDS --------------------
+\newcommand{\contact}[1]{\small #1}
+
+\newcommand{\entry}[4]{% title, right, subtitle, dates/loc
+  \begin{tabularx}{\textwidth}{X r}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}\vspace{-2pt}
+}
+
+\newcommand{\entrySingle}[2]{% left, right
+  \begin{tabularx}{\textwidth}{X r}
+    \textbf{#1} & \textbf{#2}
+  \end{tabularx}\vspace{-2pt}
+}
+
+\newcommand{\tightItem}[1]{\item \fontsize{10}{10.2}\selectfont #1}
+
+% -------------------- DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADER --------------------
+\begin{center}
+{\LARGE \textbf{Yousif Shasha}}\\[4pt]
+\contact{Mississauga, ON \;\;|\;\; (647) 887-2009 \;\;|\;\;
+\href{mailto:yousif.shasha0@gmail.com}{yousif.shasha0@gmail.com} \;\;|\;\;
+\href{https://www.linkedin.com/in/yousif-shasha-177412375}{LinkedIn}}
+\;\;|\;\;
+\href{https://yousifshasha.github.io/Yousif-Shasha.github.io/}{Portfolio}
+\end{center}
+
+\vspace{-4pt}
+
+% -------------------- SUMMARY --------------------
+\section*{Summary}
+\fontsize{10}{10.2}\selectfont{
+Structural Engineering student seeking a Winter 2027 civil infrastructure and utilities co-op. Experienced in AutoCAD drafting, hydraulic network modelling, surveying, engineering data analysis, and technical documentation through academic and team projects. Brings strong organization, attention to detail, and collaborative leadership developed in engineering fieldwork and a fast-paced supervisory role.}
+
+% -------------------- EDUCATION --------------------
+\section*{Education}
+\entry
+{Toronto Metropolitan University}{Toronto, ON}
+{B.Eng. Structural Engineering}{Expected 2029}
+\begin{itemize}
+  \tightItem{Relevant Coursework: Civil Engineering Systems, Project Management, Surveying, Fluid Mechanics and Hydraulics, Transportation Engineering, Foundation and Soils Engineering, Structural Design and Analysis, and Computer-Aided Structural Analysis.}
+  \tightItem{Awards: \textit{Dean's List --- Fall 2025, Winter 2026; Top 3 Project, Geology for Engineers}}
+\end{itemize}
+\vspace{2pt}
+
+% -------------------- EXPERIENCE --------------------
+\section*{Experience}
+\entry
+{Groupe Adonis}{Mississauga, ON}
+{Grocery Supervisor}{July 2023 -- Present}
+\begin{itemize}
+  \tightItem{Coordinate daily assignments for 2--6 employees and train new hires to maintain organized, efficient team workflows.}
+  \tightItem{Manage the stocking, palletizing, and accurate placement of 10,000+ products while maintaining reliable inventory availability.}
+  \tightItem{Resolve customer and operational issues independently through clear communication, prioritization, and adaptability in a fast-paced setting.}
+\end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section*{Projects}
+\entrySingle{Structural Mechanics \;---\; \textit{AutoCAD, Excel}}{Fall 2025 -- Winter 2026}
+\begin{itemize}
+  \tightItem{Prepared dimensioned AutoCAD plan, elevation, section, and detail drawings for six structural laboratory experiments.}
+  \tightItem{Organized experimental data and completed Excel calculations for stress, deflection, truss forces, and torsion.}
+  \tightItem{Compared calculated results with strain- and dial-gauge measurements, identifying a 1.14\% neutral-axis difference and documenting findings in technical reports.}
+\end{itemize}
+
+\entrySingle{Hydraulics Engineering \;---\; \textit{EPANET, HEC-RAS, Excel}}{Winter 2026}
+\begin{itemize}
+  \tightItem{Built and evaluated EPANET water-distribution scenarios using pipe length, diameter, roughness, demand, elevation, and network redundancy inputs.}
+  \tightItem{Used HEC-RAS and Excel to compare flood profiles through the 100-year event and assess water-surface elevation, velocity, and erosion risk.}
+  \tightItem{Analyzed seven laboratory experiments covering pressurized flow, pipe losses, weirs, and sluice-gate behaviour, then documented methods and results.}
+\end{itemize}
+
+\entrySingle{Topographic Surveying \;---\; \textit{Total Station, Excel}}{October 2025}
+\begin{itemize}
+  \tightItem{Led field workflow and measurement sequencing for a six-person team completing a closed surveying network.}
+  \tightItem{Collected and organized total-station elevation, angle, and distance data, achieving a 0.0032 m benchmark misclosure.}
+  \tightItem{Calculated traverse components, verified closure, and applied coordinate adjustments using direct/reverse observations and differential-leveling checks.}
+\end{itemize}
+
+\entrySingle{Geotechnical Engineering Laboratory}{Winter 2026}
+\begin{itemize}
+  \tightItem{Classified soils using Atterberg limits and sieve analysis and evaluated compaction, permeability, consolidation, and shear-strength results.}
+  \tightItem{Organized laboratory data and documented a 19.54 kN/m³ maximum dry unit weight and 37.4° friction angle.}
+\end{itemize}
+
+% -------------------- LEADERSHIP --------------------
+\section*{Leadership \& Activities}
+\entry
+{Toronto Metropolitan University Concrete Canoe Team}{Toronto, ON}
+{Construction Team Member}{September 2025 -- Present}
+\begin{itemize}
+  \tightItem{Fabricate canoe components through precision cutting, sanding, taping, and assembly in accordance with competition requirements.}
+  \tightItem{Document prototype results and coordinate with team members to evaluate materials, fabrication methods, and design improvements.}
+\end{itemize}
+
+% -------------------- SKILLS --------------------
+\section*{Skills}
+\fontsize{10}{10.2}\selectfont{
+\textbf{Design \& Analysis:} AutoCAD, Microsoft Excel, EPANET, HEC-RAS, Revit, ETABS (Basic), MATLAB \\
+\textbf{Civil Engineering:} Surveying, Hydraulic Network Modelling, Engineering Drawings, Data Analysis, Materials Testing, Technical Reporting, Uncertainty \& Error Analysis \\
+\textbf{Field \& Professional:} Total Station, Differential Levelling, Project Coordination, Team Leadership, Organization, Communication, Time Management, Attention to Detail
+}
+
+\end{document}
